@@ -28,10 +28,18 @@ const Main = () => {
             />
           </h2>
           <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-            <FaTelegram className='cursor-pointer' size={20}/>
-            <FaGithub className='cursor-pointer' size={20}/>
-            <FaInstagram className='cursor-pointer' size={20}/>
-            <FaLinkedin className='cursor-pointer' size={20}/>
+            <a href='https://t.me/MrGregoryv' target='_blank'>
+              <FaTelegram
+                className='cursor-pointer' size={20}/>
+            </a>
+            <a href='https://github.com/gregorybv' target='_blank'>
+              <FaGithub
+                className='cursor-pointer' size={20}/>
+            </a>
+            <a href='https://www.linkedin.com/in/gregory-berezin-58444a23a/' target='_blank'>
+              <FaLinkedin
+                className='cursor-pointer' size={20}/>
+            </a>
           </div>
         </div>
       </div>
