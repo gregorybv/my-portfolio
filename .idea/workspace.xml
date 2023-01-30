@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00df1ac7-a085-43b5-8457-9cf9faf1d0fc" name="Changes" comment="new function add to link">
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,10 @@
       <workItem from="1674909509527" duration="1590000" />
       <workItem from="1674911232132" duration="8960000" />
       <workItem from="1674921235714" duration="7172000" />
-      <workItem from="1674981357631" duration="3777000" />
+      <workItem from="1674981357631" duration="4732000" />
+      <workItem from="1675005276710" duration="2000" />
+      <workItem from="1675005488927" duration="5000" />
+      <workItem from="1675092691169" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="add menu">
       <created>1674912769602</created>
