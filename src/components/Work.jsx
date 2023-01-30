@@ -5,7 +5,7 @@ const data = [
   {
     year: 2022,
     title: 'Salt&Pepper Agency',
-    duration: '1 Years',
+    duration: '1 Year',
     details: 'UI design.\n' +
       'Implementation of new functionality.\n' +
       'Adaptive and cross-browser layout using HTML, CSS and JavaScript.\n' +
