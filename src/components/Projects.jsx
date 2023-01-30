@@ -7,7 +7,7 @@ import img4 from "../assets/image/4.png"
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-[1040px] m-auto md:pl-20 pl-4 py-16'>
+    <div id='projects' className='max-w-[1040px] m-auto md:pl-20 pl-4 pr-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
       <p className='text-center py-8 text-2xl'>Examples of my recent pet projects implemented using various technologies
       </p>
