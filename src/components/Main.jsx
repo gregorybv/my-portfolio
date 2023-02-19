@@ -1,7 +1,7 @@
 import React from 'react'
 import photo from '../assets/image/photo.jpg'
 import {TypeAnimation} from "react-type-animation";
-import {FaGithub, FaInstagram, FaLinkedin, FaTelegram} from "react-icons/all";
+import {FaGithub, FaLinkedin, FaTelegram} from "react-icons/all";
 
 const Main = () => {
   return (
