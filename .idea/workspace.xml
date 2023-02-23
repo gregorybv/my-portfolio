@@ -29,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Coding/React projects/gym-website-react",
+    "last_opened_file_path": "D:/Coding/React projects/grow-with-data",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -51,6 +51,7 @@
       <workItem from="1675005488927" duration="5000" />
       <workItem from="1675092691169" duration="12000" />
       <workItem from="1675092705268" duration="748000" />
+      <workItem from="1676822208362" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="add menu">
       <created>1674912769602</created>
