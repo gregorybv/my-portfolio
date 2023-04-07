@@ -39,7 +39,7 @@ const Projects = () => {
         />
         <ProjectItem
           img={img3}
-          title='Weekaway site' 
+          title='Weekaway site'
           stack='react tailwindcss'
           href='https://gregorybv.github.io/weekaway-website/'
         />
