@@ -4,6 +4,8 @@ import img1 from "../assets/image/1.png"
 import img2 from "../assets/image/2.png"
 import img3 from "../assets/image/3.png"
 import img4 from "../assets/image/4.png"
+import img5 from "../assets/image/5.png"
+import img6 from "../assets/image/6.png"
 import { SmilingFace } from "fluent-emoji"
 
 const Projects = () => {
@@ -19,36 +21,42 @@ const Projects = () => {
         Examples of my recent projects implemented using various technologies 
         <SmilingFace className='w-[40px]' />
       </p>
-      <div className='grid sm:grid-cols-3 gap-6'>
+      <div className='grid sm:grid-cols-3 gap-6 mt-5'>
         <ProjectItem
           img={img1}
           title='Sports'
+          stack='react css'
           href='https://gregorybv.github.io/gym-website-react/'
         />
         <ProjectItem
           img={img2}
-          title='Kripto'
-          href='https://gregorybv.github.io/kraftex-app/'
+          title='Your Tour'
+          stack='react hooks css aos '
+          href='https://gregorybv.github.io/tour-app-react/'
         />
         <ProjectItem
           img={img3}
-          title='Awesome'
-          href='https://gregorybv.github.io/antools-app-react/'
+          title='Weekaway'
+          stack='react tailwindcss'
+          href='https://gregorybv.github.io/weekaway-website/'
         />
         <ProjectItem
           img={img4}
           title='Music'
+          stack='react rrd tailwindcss'
           href='https://gregorybv.github.io/music-app/'
         />
          <ProjectItem
-          img={img4}
-          title='Music'
-          href='https://gregorybv.github.io/music-app/'
+          img={img5}
+          title='Grow with data'
+          stack='react tailwindcss'
+          href='https://gregorybv.github.io/grow-with-data/'
         />
          <ProjectItem
-          img={img4}
-          title='Music'
-          href='https://gregorybv.github.io/music-app/'
+          img={img6}
+          title='Drive'
+          stack='react css hooks'
+          href='https://gregorybv.github.io/drive-website/'
         />
       </div>
     </div>
