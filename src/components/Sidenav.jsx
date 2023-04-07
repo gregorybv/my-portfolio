@@ -72,7 +72,7 @@ const Sidenav = () => {
         <div className='flex flex-col'>
           <a
             href='#main'
-            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
@@ -83,7 +83,7 @@ const Sidenav = () => {
           </a>
           <a
             href='#work'
-            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
@@ -94,7 +94,7 @@ const Sidenav = () => {
           </a>
           <a
             href='#projects'
-            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
@@ -105,7 +105,7 @@ const Sidenav = () => {
           </a>
           <a
             href='#main'
-            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
@@ -116,7 +116,7 @@ const Sidenav = () => {
           </a>
           <a
             href='#contact'
-            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
