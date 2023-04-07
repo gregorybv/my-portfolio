@@ -68,61 +68,61 @@ const Sidenav = () => {
         ""
       )}
 
-      <div className='md:block hidden fixed top-[25%] z-10'>
+      <div className='md:block hidden fixed top-[25%] z-10 '>
         <div className='flex flex-col'>
           <a
             href='#main'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
             <AiOutlineHome
               size={20}
-              className='hover:scale-150 ease-in duration-300'
+              className='group-hover:scale-150 ease-in duration-300'
             />
           </a>
           <a
             href='#work'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
             <AiOutlineAppstore
               size={20}
-              className='hover:scale-150 ease-in duration-300'
+              className='group-hover:scale-150 ease-in duration-300'
             />
           </a>
           <a
             href='#projects'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
             <AiOutlineProject
               size={20}
-              className='hover:scale-150 ease-in duration-300'
+              className='group-hover:scale-150 ease-in duration-300'
             />
           </a>
           <a
             href='#main'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
             <BsPerson
               size={20}
-              className='hover:scale-150 ease-in duration-300'
+              className='group-hover:scale-150 ease-in duration-300'
             />
           </a>
           <a
             href='#contact'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+            className='group rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer'
             data-aos='flip-left'
             data-aos-duration='1300'
           >
             <AiOutlineMail
               size={20}
-              className='hover:scale-150 ease-in duration-300'
+              className='group-hover:scale-150 ease-in duration-300'
             />
           </a>
         </div>
