@@ -6,6 +6,9 @@ import img3 from "../assets/image/3.png"
 import img4 from "../assets/image/4.png"
 import img5 from "../assets/image/5.png"
 import img6 from "../assets/image/6.png"
+import img7 from "../assets/image/7.png"
+import img8 from "../assets/image/8.png"
+import img9 from "../assets/image/9.png"
 import { SmilingFace } from "fluent-emoji"
 
 const Projects = () => {
@@ -18,7 +21,7 @@ const Projects = () => {
         Projects
       </h1>
       <p className='flex items-center justify-center gap-3 text-center py-8 text-2xl'>
-        Examples of my recent projects implemented using various technologies 
+        Examples of my recent projects implemented using various technologies
         <SmilingFace className='w-[40px]' />
       </p>
       <div className='grid sm:grid-cols-3 gap-6 mt-5'>
@@ -46,17 +49,35 @@ const Projects = () => {
           stack='react rrd tailwindcss'
           href='https://gregorybv.github.io/music-app/'
         />
-         <ProjectItem
+        <ProjectItem
           img={img5}
           title='Grow with data'
           stack='react tailwindcss'
           href='https://gregorybv.github.io/grow-with-data/'
         />
-         <ProjectItem
+        <ProjectItem
           img={img6}
           title='Drive'
           stack='react css hooks'
           href='https://gregorybv.github.io/drive-website/'
+        />
+        <ProjectItem
+          img={img7}
+          title='Your Travel'
+          stack='react tailwind hooks'
+          href='https://gregorybv.github.io/travel-app/'
+        />
+        <ProjectItem
+          img={img8}
+          title='Trading Protocol'
+          stack='react tailwind hooks'
+          href='https://gregorybv.github.io/trading-protocol/'
+        />
+        <ProjectItem
+          img={img9}
+          title='Kraftex'
+          stack='react css hooks'
+          href='https://gregorybv.github.io/kraftex-app/'
         />
       </div>
     </div>
