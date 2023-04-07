@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <div
       id='projects'
-      className='max-w-[1240px] m-auto md:pl-20 pl-4 pr-4 py-16'
+      className='max-w-[1240px] m-auto md:pl-20 pl-4 pr-4 py-10'
     >
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
         Projects
@@ -27,25 +27,25 @@ const Projects = () => {
       <div className='grid sm:grid-cols-3 gap-6 mt-5'>
         <ProjectItem
           img={img1}
-          title='Sports'
+          title='Sports site'
           stack='react css'
           href='https://gregorybv.github.io/gym-website-react/'
         />
         <ProjectItem
           img={img2}
-          title='Your Tour'
+          title='Your tour'
           stack='react hooks css aos '
           href='https://gregorybv.github.io/tour-app-react/'
         />
         <ProjectItem
           img={img3}
-          title='Weekaway'
+          title='Weekaway site' 
           stack='react tailwindcss'
           href='https://gregorybv.github.io/weekaway-website/'
         />
         <ProjectItem
           img={img4}
-          title='Music'
+          title='Music app'
           stack='react rrd tailwindcss'
           href='https://gregorybv.github.io/music-app/'
         />
@@ -57,13 +57,13 @@ const Projects = () => {
         />
         <ProjectItem
           img={img6}
-          title='Drive'
+          title='Drive site'
           stack='react css hooks'
           href='https://gregorybv.github.io/drive-website/'
         />
         <ProjectItem
           img={img7}
-          title='Your Travel'
+          title='Your travel'
           stack='react tailwind hooks'
           href='https://gregorybv.github.io/travel-app/'
         />
@@ -75,7 +75,7 @@ const Projects = () => {
         />
         <ProjectItem
           img={img9}
-          title='Kraftex'
+          title='Kraftex site'
           stack='react css hooks'
           href='https://gregorybv.github.io/kraftex-app/'
         />
