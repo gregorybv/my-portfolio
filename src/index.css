@@ -6,9 +6,9 @@
   scroll-behavior: smooth;
 }
 
-/* body {
-  cursor: url('./assets/cursor_4.cur'), auto;
-} */
+body {
+  background: #e3f6e0;
+}
 
 body::-webkit-scrollbar {
   width: 12px; 
