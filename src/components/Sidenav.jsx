@@ -57,8 +57,6 @@ const Sidenav = () => {
             <AiOutlineMail size={20} />
             <span className='pl-4'>Contact</span>
           </a>
-
-
         </div>
       ) : (
         ""
