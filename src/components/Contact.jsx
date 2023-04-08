@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div id='contact' className='max-w-[900px] m-auto md:pl-20 pl-4 py-16'>
       <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>
-      Contact me
+        Contact me
       </h1>
       <form
         action='https://getform.io/f/da699e76-08d8-4b86-8287-fb489777d6b9'
@@ -53,8 +53,10 @@ const Contact = () => {
             name='message'
           ></textarea>
         </div>
-        <button className='bg-[#001b5e] text-gray-100 mt-4 w-full p-4 rounded-lg shadow-lg shadow-[#4c85e6]'>
-          Send Message
+        <button className='bg-[#001b5e] mt-4 w-full p-4 rounded-lg shadow-lg shadow-[#4c85e6] group'>
+          <p className='text-gray-100 text-xl group-hover:scale-110 ease-in duration-200'>
+            Send Message
+          </p>
         </button>
       </form>
     </div>
