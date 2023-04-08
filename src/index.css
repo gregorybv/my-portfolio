@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+/* body {
+  cursor: url('./assets/cursor_4.cur'), auto;
+} */
+
 body::-webkit-scrollbar {
   width: 12px; 
 }
