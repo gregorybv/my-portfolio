@@ -24,7 +24,7 @@ const Sidenav = () => {
         size={30}
       />
       {nav ? (
-        <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
+        <div className='fixed w-full h-screen bg-[#e3f6e0] flex flex-col justify-center items-center z-20'>
           <a
             onClick={handleNav}
             href='#main'
