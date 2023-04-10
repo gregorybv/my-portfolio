@@ -29,6 +29,7 @@ const Contact = () => {
             />
           </div>
         </div>
+
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Email</label>
           <input
@@ -37,6 +38,7 @@ const Contact = () => {
             name='name'
           />
         </div>
+
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Subject</label>
           <input
@@ -45,6 +47,7 @@ const Contact = () => {
             name='subject'
           />
         </div>
+
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Message</label>
           <textarea
@@ -53,6 +56,7 @@ const Contact = () => {
             name='message'
           ></textarea>
         </div>
+
         <button className='bg-[#001b5e] mt-4 w-full p-4 rounded-lg shadow-lg shadow-[#4c85e6] group'>
           <p className='text-gray-100 text-xl group-hover:scale-110 ease-in duration-200'>
             Send Message
