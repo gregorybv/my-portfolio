@@ -33,7 +33,8 @@ const data = [
     details:
       "• Creation and administration of local network\n" +
       "• Configuration and maintenance of trade equipment\n" +
-      "• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)",
+      "• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)\n"+
+      "• User support",
   },
 ]
 const Work = () => {
