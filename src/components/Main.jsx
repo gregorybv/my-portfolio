@@ -34,6 +34,7 @@ const Main = () => {
                 )
               })}
             </div>
+
             <div className='flex'>
               {two.map((letter, index) => {
                 return (
@@ -43,6 +44,7 @@ const Main = () => {
                 )
               })}
             </div>
+
             <div className='flex gap-5'>
               <div className='flex'>
                 {three.map((letter, index) => {
@@ -53,6 +55,7 @@ const Main = () => {
                   )
                 })}
               </div>
+
               <div className='flex'>
                 {four.map((letter, index) => {
                   return (
@@ -64,13 +67,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          {/* <h1
-            className='sm:text-8xl text-5xl font-bold text-gray-800'
-            data-aos='fade-down'
-            data-aos-duration='1300'
-          >
-            I am Grigory Berezin
-          </h1> */}
+
           <h2
             className='flex items-center sm:text-4xl text-2xl pt-4 text-gray-800'
             data-aos='fade-up'
@@ -94,6 +91,7 @@ const Main = () => {
             />
             <WinkingFace className='w-[55px] pl-3' />
           </h2>
+
           <div
             className='flex justify-between pt-6 max-w-[200px] w-full'
             data-aos='fade-up'
