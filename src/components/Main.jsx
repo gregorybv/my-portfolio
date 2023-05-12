@@ -101,7 +101,7 @@ const Main = () => {
             data-aos='fade-up'
             data-aos-duration='1300'
           >
-            <a href='https://t.me/MrGregoryv' target='_blank'>
+            <a href='https://t.me/MrGregorybv' target='_blank'>
               <FaTelegram className='cursor-pointer' size={30} />
             </a>
             <a href='https://github.com/gregorybv' target='_blank'>
