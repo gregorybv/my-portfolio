@@ -6,7 +6,7 @@ import { work } from "../data"
 const Work = () => {
   return (
     <div id='work' className='max-w-[1040px] m-auto md:pl-20 pt-12 py-16'>
-      <h2 className='text-5xl font-bold text-center text-[#001b5e] mb-6'>
+      <h2 className='h2'>
         Work
       </h2>
       {work.map((item, idx) => (
