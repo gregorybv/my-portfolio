@@ -1,5 +1,5 @@
 import React from "react"
-import ProjectItem from "./ProjectItem.jsx"
+import ProjectItem from "./ProjectItem"
 import img1 from "../assets/image/1.png"
 import img2 from "../assets/image/2.png"
 import img3 from "../assets/image/3.png"

@@ -1,9 +1,10 @@
-import Sidenav from "./components/Sidenav.jsx"
-import Main from "./components/Main.jsx"
-import Work from "./components/Work.jsx"
-import Projects from "./components/Projects.jsx"
-import Contact from "./components/Contact.jsx"
-import Cursor from "./components/Cursor.jsx"
+import Sidenav from "./components/Sidenav"
+import Main from "./components/Main"
+import Work from "./components/Work"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Cursor from "./components/Cursor"
+import React from "react"
 
 function App() {
   return (
