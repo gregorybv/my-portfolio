@@ -1,3 +1,4 @@
+// ProjectItem component
 import React from "react"
 
 const ProjectItem = ({ img, title, href, stack }) => {
@@ -5,7 +6,7 @@ const ProjectItem = ({ img, title, href, stack }) => {
     <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#4c85e6] rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e] hover:scale-110 ease-in duration-300'>
       <img
         src={img}
-        alt='/'
+        alt='projectitemImage'
         className='h-full rounded-xl group-hover:opacity-10'
       />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
