@@ -12,6 +12,10 @@
   html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+
+  .h2 {
+    @apply text-6xl font-bold text-center text-[#001b5e] mb-2;
+  }
 }
 
 body {
