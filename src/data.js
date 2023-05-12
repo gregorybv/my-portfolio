@@ -11,7 +11,6 @@ import img9 from "./assets/image/9.png"
 import {
   AiOutlineHome,
   AiOutlineMail,
-  AiOutlineMenu,
   AiOutlineProject,
   AiOutlineAppstore,
   AiOutlineArrowUp,
