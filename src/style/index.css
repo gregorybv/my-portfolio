@@ -12,9 +12,12 @@
   html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-
   .h2 {
     @apply text-6xl font-bold text-center text-[#001b5e] mb-2;
+  }
+
+  .mobile {
+    @apply w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-2 cursor-pointer hover:scale-105 ease-in duration-200;
   }
 }
 
