@@ -1,3 +1,4 @@
+// WorkItem component
 import React from "react"
 
 const WorkItem = ({ year, title, duration, details }) => {
