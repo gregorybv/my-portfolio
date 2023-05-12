@@ -1,4 +1,6 @@
+// TextSpan component
 import React from "react"
+// add motion
 import { motion, useAnimationControls } from "framer-motion"
 import { useState } from "react"
 
