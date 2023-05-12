@@ -1,3 +1,4 @@
+// Projects component
 import React from "react"
 import ProjectItem from "./ProjectItem"
 import img1 from "../assets/image/1.png"
@@ -25,6 +26,7 @@ const Projects = () => {
         <SmilingFace className='w-[40px]' />
       </p>
       <div className='grid sm:grid-cols-3 gap-6 mt-5'>
+        {/* later redo via data and map!!!!!!!!! */}
         <ProjectItem
           img={img1}
           title='Sports site'
