@@ -1,3 +1,4 @@
+// Work component
 import React from "react"
 import WorkItem from "./WorkItem"
 
