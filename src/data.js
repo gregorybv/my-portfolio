@@ -8,6 +8,15 @@ import img7 from "./assets/image/7.png"
 import img8 from "./assets/image/8.png"
 import img9 from "./assets/image/9.png"
 
+import {
+  AiOutlineHome,
+  AiOutlineMail,
+  AiOutlineMenu,
+  AiOutlineProject,
+  AiOutlineAppstore,
+  AiOutlineArrowUp,
+} from "react-icons/all"
+
 export const project = [
   {
     img: img1,
@@ -99,5 +108,51 @@ export const work = [
       "• Configuration and maintenance of trade equipment\n" +
       "• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)\n" +
       "• User support",
+  },
+]
+
+export const navbar = [
+  {
+    href: "#main",
+    Icon: AiOutlineHome,
+  },
+  {
+    href: "#work",
+    Icon: AiOutlineAppstore,
+  },
+  {
+    href: "#projects",
+    Icon: AiOutlineProject,
+  },
+  {
+    href: "#contact",
+    Icon: AiOutlineMail,
+  },
+  {
+    href: "#main",
+    Icon: AiOutlineArrowUp,
+  },
+]
+
+export const navbarmin = [
+  {
+    href: "#main",
+    Iconmin: AiOutlineHome,
+    name: "Home",
+  },
+  {
+    href: "#work",
+    Iconmin: AiOutlineAppstore,
+    name: "Work",
+  },
+  {
+    href: "#projects",
+    Iconmin: AiOutlineProject,
+    name: "Projects",
+  },
+  {
+    href: "#contact",
+    Iconmin: AiOutlineMail,
+    name: "Contact",
   },
 ]
