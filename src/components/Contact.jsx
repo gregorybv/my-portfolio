@@ -4,7 +4,7 @@ import React from "react"
 const Contact = () => {
   return (
     <div id='contact' className='max-w-[900px] m-auto md:pl-20 px-4 py-16'>
-      <h2 className='py-4 text-5xl font-bold text-center text-[#001b5e]'>
+      <h2 className='h2'>
         Contact me
       </h2>
       {/* add the form from getform.io */}
