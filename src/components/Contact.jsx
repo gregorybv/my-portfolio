@@ -1,3 +1,4 @@
+// Contact component
 import React from "react"
 
 const Contact = () => {
@@ -6,12 +7,14 @@ const Contact = () => {
       <h2 className='py-4 text-5xl font-bold text-center text-[#001b5e]'>
         Contact me
       </h2>
+      {/* add the form from getform.io */}
       <form
         action='https://getform.io/f/da699e76-08d8-4b86-8287-fb489777d6b9'
         method='POST'
         encType='multipart/form-data'
       >
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+          {/* name */}
           <div className='flex flex-col'>
             <label className='uppercase text-sm py-2'>Name</label>
             <input
@@ -20,6 +23,7 @@ const Contact = () => {
               name='name'
             />
           </div>
+          {/* phone */}
           <div className='flex flex-col'>
             <label className='uppercase text-sm py-2'>Phone Number</label>
             <input
@@ -29,7 +33,7 @@ const Contact = () => {
             />
           </div>
         </div>
-
+        {/* email */}
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Email</label>
           <input
@@ -38,7 +42,7 @@ const Contact = () => {
             name='name'
           />
         </div>
-
+        {/* subject */}
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Subject</label>
           <input
@@ -47,7 +51,7 @@ const Contact = () => {
             name='subject'
           />
         </div>
-
+        {/* message */}
         <div className='flex flex-col py-2'>
           <label className='uppercase text-sm py-2'>Message</label>
           <textarea
@@ -56,7 +60,7 @@ const Contact = () => {
             name='message'
           ></textarea>
         </div>
-
+        {/* button */}
         <button className='bg-[#001b5e] mt-4 w-full p-4 rounded-lg shadow-lg shadow-[#4c85e6] group'>
           <p className='text-gray-100 text-xl group-hover:scale-110 ease-in duration-200'>
             Send Message
