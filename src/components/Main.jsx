@@ -1,8 +1,10 @@
+// Main component
 import React from "react"
 import TextSpan from "./TextSpan"
 import photo from "../assets/image/photo.jpg"
 import { TypeAnimation } from "react-type-animation"
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/all"
+// add emoji
 import { WinkingFace } from "fluent-emoji"
 
 const Main = () => {
@@ -73,6 +75,7 @@ const Main = () => {
             data-aos='fade-up'
             data-aos-duration='1300'
           >
+            {/* TypeAnimation */}
             <TypeAnimation
               sequence={[
                 "Developer",
@@ -89,6 +92,7 @@ const Main = () => {
               repeat={Infinity}
               style={{ fontSize: "1em", paddingLeft: "5px" }}
             />
+            {/* emoji */}
             <WinkingFace className='w-[55px] pl-3' />
           </h2>
 
