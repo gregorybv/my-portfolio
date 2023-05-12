@@ -8,6 +8,7 @@ const ProjectItem = ({ img, title, href, stack }) => {
         src={img}
         alt='projectitemImage'
         className='h-full rounded-xl group-hover:opacity-10'
+        loading='lazy'
       />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h3 className='text-2xl font-bold text-white tracking-wide text-center'>
