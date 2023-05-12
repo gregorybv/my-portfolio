@@ -10,7 +10,7 @@ const Projects = () => {
       id='projects'
       className='max-w-[1240px] m-auto md:pl-20 pl-4 pr-4 py-10'
     >
-      <h2 className='text-5xl font-bold text-center text-[#001b5e]'>
+      <h2 className='h2'>
         Projects
       </h2>
       <p className='flex items-center justify-center gap-3 text-center py-8 text-2xl'>
