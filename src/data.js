@@ -16,7 +16,7 @@ export const project = [
     href: "https://gregorybv.github.io/gym-website-react/",
   },
   {
-    img:  img2,
+    img: img2,
     title: "Your tour",
     stack: "react hooks css aos",
     href: "https://gregorybv.github.io/tour-app-react/",
@@ -97,7 +97,7 @@ export const work = [
     details:
       "• Creation and administration of local network\n" +
       "• Configuration and maintenance of trade equipment\n" +
-      "• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)\n"+
+      "• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)\n" +
       "• User support",
   },
 ]
