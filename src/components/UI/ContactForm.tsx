@@ -1,7 +1,6 @@
-import React from "react"
 import FormButton from "./FormButton"
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   return (
     <form
       action='https://getform.io/f/da699e76-08d8-4b86-8287-fb489777d6b9'
@@ -50,7 +49,7 @@ const ContactForm = () => {
         <label className='uppercase text-sm py-2'>Message</label>
         <textarea
           className='border-2 rounded-lg p-3 border-gray-300'
-          rows='5'
+          rows={5}
           name='message'
         ></textarea>
       </div>

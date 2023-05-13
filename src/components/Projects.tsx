@@ -1,10 +1,9 @@
 // Projects component
-import React from "react"
 import ProjectItem from "./ProjectItem"
 import { project } from "../data"
 import { SmilingFace } from "fluent-emoji"
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <div
       id='projects'

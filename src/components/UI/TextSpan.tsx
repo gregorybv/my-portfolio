@@ -1,10 +1,14 @@
 // TextSpan component
-import React from "react"
 // add motion
 import { motion, useAnimationControls } from "framer-motion"
-import { useState } from "react"
+import { useState, ReactNode } from "react"
 
-const TextSpan = ({ children }) => {
+interface TextSpanProps {
+  children: ReactNode;
+  className: string
+}
+
+const TextSpan: React.FC<TextSpanProps> = ({ children }) => {
   const controls = useAnimationControls()
   const [isPlaying, setIsPlaying] = useState(false)
 

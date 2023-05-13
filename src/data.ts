@@ -16,7 +16,34 @@ import {
   AiOutlineArrowUp,
 } from "react-icons/all"
 
-export const project = [
+
+interface Project {
+  img: string;
+  title: string;
+  stack: string;
+  href: string;
+}
+
+interface Work {
+  year: string;
+  title: string;
+  duration: string;
+  details: string;
+}
+
+interface Navbar {
+  href: string;
+  Icon: any;
+}
+
+interface Navbarmin {
+  href: string;
+  Iconmin: any;
+  name: string;
+}
+
+
+export const project: Project[] = [
   {
     img: img1,
     title: "Sports site",
@@ -73,7 +100,7 @@ export const project = [
   },
 ]
 
-export const work = [
+export const work: Work[] = [
   {
     year: "2022 - 2023",
     title: "Salt&Pepper Agency",
@@ -110,7 +137,7 @@ export const work = [
   },
 ]
 
-export const navbar = [
+export const navbar: Navbar[] = [
   {
     href: "#main",
     Icon: AiOutlineHome,
@@ -133,7 +160,7 @@ export const navbar = [
   },
 ]
 
-export const navbarmin = [
+export const navbarmin: Navbarmin[] = [
   {
     href: "#main",
     Iconmin: AiOutlineHome,

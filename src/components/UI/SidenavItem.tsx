@@ -1,7 +1,6 @@
-import React from "react"
 import { navbar } from "../../data"
 
-const SidenavItem = () => {
+const SidenavItem: React.FC = () => {
   return (
     <div className='md:block hidden fixed top-[25%] z-10 '>
       <div className='flex flex-col'>

@@ -1,7 +1,14 @@
 // WorkItem component
 import React from "react"
 
-const WorkItem = ({ year, title, duration, details }) => {
+interface WorkItemProps {
+  year: string;
+  title: string;
+  duration: string;
+  details: string;
+}
+
+const WorkItem: React.FC<WorkItemProps> = ({ year, title, duration, details }) => {
   return (
     <ol className='flex flex-col pt-3 md:flex-row relative border-l border-stone-200'  data-aos='fade-up' data-aos-duration='1300'>
       <li className='mb-7 ml-4'>

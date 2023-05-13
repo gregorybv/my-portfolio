@@ -1,4 +1,3 @@
-import React from "react"
 import Cursor from "./UI/Cursor"
 import Sidenav from "./Sidenav"
 import Hero from "./Hero"
@@ -6,7 +5,7 @@ import Work from "./Work"
 import Projects from "./Projects"
 import Contact from "./Contact"
 
-const Main = () => {
+const Main: React.FC = () => {
   return (
     <div>
       <Cursor />

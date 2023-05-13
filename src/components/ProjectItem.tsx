@@ -1,7 +1,13 @@
 // ProjectItem component
-import React from "react"
 
-const ProjectItem = ({ img, title, href, stack }) => {
+interface ProjectItemProps {
+  img: string;
+  title: string;
+  href: string;
+  stack: string;
+}
+
+const ProjectItem: React.FC<ProjectItemProps> = ({ img, title, href, stack }) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#4c85e6] rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e] hover:scale-110 ease-in duration-300'>
       <img

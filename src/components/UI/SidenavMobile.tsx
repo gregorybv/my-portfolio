@@ -1,7 +1,10 @@
-import React from "react"
 import { navbarmin } from "../../data"
 
-const SidenavMobile = ({ handleNav }) => {
+interface SidenavMobileProps {
+  handleNav: () => void;
+}
+
+const SidenavMobile: React.FC<SidenavMobileProps> = ({ handleNav }) => {
   return (
     <div className='fixed w-full h-screen bg-[#e3f6e0] flex flex-col justify-center items-center z-20'>
       {navbarmin.map((item, id) => {

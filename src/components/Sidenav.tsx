@@ -1,10 +1,10 @@
 // Sidenav component
-import React, { useState } from "react"
+import { useState } from "react"
 import { AiOutlineMenu } from "react-icons/all"
 import SidenavMobile from "./UI/SidenavMobile"
 import SidenavItem from "./UI/SidenavItem"
 
-const Sidenav = () => {
+const Sidenav: React.FC = () => {
   const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav(!nav)

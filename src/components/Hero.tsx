@@ -1,5 +1,4 @@
 // Main component
-import React from "react"
 import TextSpan from "./UI/TextSpan"
 import photo from "../assets/image/photo.jpg"
 import { TypeAnimation } from "react-type-animation"
@@ -7,7 +6,7 @@ import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/all"
 // add emoji
 import { WinkingFace } from "fluent-emoji"
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const one = "I'm".split("")
   const two = "Gregory".split("")
   const three = "web".split("")
