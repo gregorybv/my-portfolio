@@ -9,6 +9,7 @@ const Work: React.FC = () => {
         Work
       </h2>
       {work.map((item, idx) => (
+        // plugging in the component WorkItem
         <WorkItem
           key={idx}
           year={item.year}
