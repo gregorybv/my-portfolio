@@ -17,9 +17,9 @@ const Sidenav: React.FC = () => {
         className='fixed top-5 right-5 z-[99] md:hidden'
         size={30}
       />
-      
+      {/* plugging in the component SidenavMobile */}
       {nav ? <SidenavMobile handleNav={handleNav} /> : ""}
-
+      {/* plugging in the component SidenavItem */}
       <SidenavItem />
     </div>
   )
