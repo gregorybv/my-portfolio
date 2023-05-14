@@ -42,7 +42,7 @@ interface Navbarmin {
   name: string;
 }
 
-
+// project data
 export const project: Project[] = [
   {
     img: img1,
@@ -100,6 +100,7 @@ export const project: Project[] = [
   },
 ]
 
+// work data
 export const work: Work[] = [
   {
     year: "2022 - 2023",
@@ -137,6 +138,7 @@ export const work: Work[] = [
   },
 ]
 
+// nawbar data
 export const navbar: Navbar[] = [
   {
     href: "#main",
@@ -160,6 +162,7 @@ export const navbar: Navbar[] = [
   },
 ]
 
+// navbarmin data
 export const navbarmin: Navbarmin[] = [
   {
     href: "#main",
