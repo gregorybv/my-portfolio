@@ -20,6 +20,7 @@ const Projects: React.FC = () => {
         {project.map((item, id) => {
           const { img, title, stack, href } = item
           return (
+            // plugging in the component ProjectItem
             <ProjectItem key={id} img={img} title={title} stack={stack} href={href} />
           )
         })}
