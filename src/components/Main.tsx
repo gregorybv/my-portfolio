@@ -1,9 +1,9 @@
-import Cursor from "./UI/Cursor"
-import Sidenav from "./Sidenav"
-import Hero from "./Hero"
-import Work from "./Work"
-import Projects from "./Projects"
-import Contact from "./Contact"
+import Cursor from './UI/Cursor';
+import Sidenav from './Sidenav';
+import Hero from './Hero';
+import Work from './Work';
+import Projects from './Projects';
+import Contact from './Contact';
 
 const Main: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Main: React.FC = () => {
       <Projects />
       <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
