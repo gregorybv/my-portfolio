@@ -15,7 +15,7 @@ const SidenavItem: React.FC = () => {
               data-aos-duration="1300"
             >
               <Icon
-                size={20}
+                size={25}
                 className="group-hover:scale-150 ease-in duration-300 group-hover:text-[#08fdd8]"
               />
             </a>
