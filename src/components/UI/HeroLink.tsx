@@ -4,8 +4,10 @@ import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 const HeroLink: React.FC = () => {
   return (
     <div
-      className="flex justify-between pt-6 max-w-[200px] w-full"
-      data-aos="fade-up"
+      className="flex justify-between max-w-[200px] w-full"
+      // data-aos="fade-up"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
       data-aos-duration="1300"
     >
       <a href="https://t.me/MrGregorybv" target="_blank">
