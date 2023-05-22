@@ -1,5 +1,4 @@
 // ProjectItem component
-
 interface ProjectItemProps {
   img: string;
   title: string;
