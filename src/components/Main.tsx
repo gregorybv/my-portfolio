@@ -1,3 +1,4 @@
+// Main component
 import Cursor from './UI/Cursor';
 import Sidenav from './Sidenav';
 import Hero from './Hero';
