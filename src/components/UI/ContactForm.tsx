@@ -3,6 +3,7 @@ import FormButton from './FormButton';
 const ContactForm: React.FC = () => {
   return (
     <form
+      // The data is sent to getform.io and arrives in an email
       action="https://getform.io/f/da699e76-08d8-4b86-8287-fb489777d6b9"
       method="POST"
       encType="multipart/form-data"
