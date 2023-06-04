@@ -1,4 +1,5 @@
 // Contact component
+
 import ContactForm from './UI/ContactForm';
 
 const Contact: React.FC = () => {
