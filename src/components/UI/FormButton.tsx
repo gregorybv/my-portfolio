@@ -1,3 +1,5 @@
+// FormButton component
+
 const FormButton: React.FC = () => {
   return (
     <button className="bg-[#001b5e] mt-4 w-full p-4 rounded-lg shadow-lg shadow-[#4c85e6] group">
