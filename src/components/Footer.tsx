@@ -1,4 +1,5 @@
 // Footer component
+
 import HeroLink from './UI/HeroLink';
 
 const Footer: React.FC = () => {
