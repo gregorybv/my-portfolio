@@ -1,4 +1,5 @@
 // Main component
+
 import photo from '../assets/image/photo.jpg';
 import HeroLink from './UI/HeroLink';
 import HeroAnimation from './UI/HeroAnimation';
