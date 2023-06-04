@@ -1,3 +1,5 @@
+// SidenavItem component
+
 import { navbar } from '../../data';
 
 const SidenavItem: React.FC = () => {
