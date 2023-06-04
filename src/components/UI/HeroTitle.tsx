@@ -1,3 +1,5 @@
+// HeroTitle component
+
 import React from 'react';
 import TextSpan from './TextSpan';
 
