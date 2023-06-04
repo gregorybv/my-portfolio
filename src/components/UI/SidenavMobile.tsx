@@ -1,3 +1,5 @@
+// SidenavMobile component
+
 import { navbarmin } from '../../data';
 
 interface SidenavMobileProps {
