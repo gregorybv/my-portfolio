@@ -9,178 +9,193 @@ import img8 from './assets/image/8.png';
 import img9 from './assets/image/9.png';
 
 import {
-  AiOutlineHome,
-  AiOutlineMail,
-  AiOutlineProject,
-  AiOutlineAppstore,
-  AiOutlineArrowUp,
+    AiOutlineHome,
+    AiOutlineMail,
+    AiOutlineProject,
+    AiOutlineAppstore,
+    AiOutlineArrowUp,
 } from 'react-icons/all';
 
 interface Project {
-  img: string;
-  title: string;
-  stack: string;
-  href: string;
+    img: string;
+    title: string;
+    stack: string;
+    href: string;
 }
 
 interface Work {
-  year: string;
-  title: string;
-  duration: string;
-  details: string;
+    year: string;
+    title: string;
+    duration: string;
+    details: string;
 }
 
 interface Navbar {
-  href: string;
-  Icon: any;
+    href: string;
+    Icon: any;
 }
 
 interface Navbarmin {
-  href: string;
-  Iconmin: any;
-  name: string;
+    href: string;
+    Iconmin: any;
+    name: string;
 }
 
 // project data
 export const project: Project[] = [
-  {
-    img: img1,
-    title: 'Sports site',
-    stack: 'react css',
-    href: 'https://gregorybv.github.io/gym-website-react/',
-  },
-  {
-    img: img2,
-    title: 'Your tour',
-    stack: 'react hooks css aos',
-    href: 'https://gregorybv.github.io/tour-app-react/',
-  },
-  {
-    img: img3,
-    title: 'Weekaway site',
-    stack: 'react tailwindcss',
-    href: 'https://gregorybv.github.io/weekaway-website/',
-  },
-  {
-    img: img4,
-    title: 'Music app',
-    stack: 'react rrd tailwindcss',
-    href: 'https://gregorybv.github.io/music-app/',
-  },
-  {
-    img: img5,
-    title: 'Grow with data',
-    stack: 'react tailwindcss',
-    href: 'https://gregorybv.github.io/grow-with-data/',
-  },
-  {
-    img: img6,
-    title: 'Drive site',
-    stack: 'react css hooks',
-    href: 'https://gregorybv.github.io/drive-website/',
-  },
-  {
-    img: img7,
-    title: 'Your travel',
-    stack: 'react tailwind hooks',
-    href: 'https://gregorybv.github.io/travel-app/',
-  },
-  {
-    img: img8,
-    title: 'Trading Protocol',
-    stack: 'react tailwind hooks',
-    href: 'https://gregorybv.github.io/trading-protocol/',
-  },
-  {
-    img: img9,
-    title: 'Kraftex site',
-    stack: 'react css hooks',
-    href: 'https://gregorybv.github.io/kraftex-app/',
-  },
+    {
+        img: img1,
+        title: 'Sports site',
+        stack: 'react css',
+        href: 'https://gregorybv.github.io/gym-website-react/',
+    },
+    {
+        img: img2,
+        title: 'Your tour',
+        stack: 'react hooks css aos',
+        href: 'https://gregorybv.github.io/tour-app-react/',
+    },
+    {
+        img: img3,
+        title: 'Weekaway site',
+        stack: 'react tailwindcss',
+        href: 'https://gregorybv.github.io/weekaway-website/',
+    },
+    {
+        img: img4,
+        title: 'Music app',
+        stack: 'react rrd tailwindcss',
+        href: 'https://gregorybv.github.io/music-app/',
+    },
+    {
+        img: img5,
+        title: 'Grow with data',
+        stack: 'react tailwindcss',
+        href: 'https://gregorybv.github.io/grow-with-data/',
+    },
+    {
+        img: img6,
+        title: 'Drive site',
+        stack: 'react css hooks',
+        href: 'https://gregorybv.github.io/drive-website/',
+    },
+    {
+        img: img7,
+        title: 'Your travel',
+        stack: 'react tailwind hooks',
+        href: 'https://gregorybv.github.io/travel-app/',
+    },
+    {
+        img: img8,
+        title: 'Trading Protocol',
+        stack: 'react tailwind hooks',
+        href: 'https://gregorybv.github.io/trading-protocol/',
+    },
+    {
+        img: img9,
+        title: 'Kraftex site',
+        stack: 'react css hooks',
+        href: 'https://gregorybv.github.io/kraftex-app/',
+    },
 ];
 
 // work data
 export const work: Work[] = [
-  {
-    year: '2022 - 2023',
-    title: 'Salt&Pepper Agency',
-    duration: '1 Year',
-    details:
-      '• UI design\n' +
-      '• Implementation of new functionality\n' +
-      '• Adaptive and cross-browser layout using HTML, CSS and JavaScript\n' +
-      '• Developing web applications using React.js, project support from the beginning of development to putting them into production\n' +
-      '• Support of completed web projects\n' +
-      '• Interaction with backend developers',
-  },
-  {
-    year: '2021 - 2022',
-    title: 'Bk company',
-    duration: '1.6 Years',
-    details:
-      '• UI design\n' +
-      '• Implementation of new functionality\n' +
-      '• Adaptive and cross-browser layout using HTML, CSS and JavaScript\n' +
-      '• Developing web applications using React.js, project support from the beginning of development to putting them into production\n' +
-      '• Support of completed web projects\n' +
-      '• Interaction with backend developers',
-  },
-  {
-    year: '2019 - 2021',
-    title: 'Alidi',
-    duration: '2 Years',
-    details:
-      '• Creation and administration of local network\n' +
-      '• Configuration and maintenance of trade equipment\n' +
-      '• PC maintenance (routine maintenance, diagnostics, repair, new pc assembly, software installation and configuration)\n' +
-      '• User support',
-  },
+    {
+        year: '2023 - present day',
+        title: 'Professional partner',
+        duration: '0,5 Year',
+        details:
+            '• Developing an administration panel using React, TypeScript and Antd\n' +
+            '• Creation of new functional blocks on the company\'s websites and their integration with existing systems\n' +
+            '• Refine and optimize existing code to improve performance and user experience\n' +
+            '• Integration with external APIs and processing of received data\n' +
+            '• Participating in code reviews and ensuring high code quality\n' +
+            '• Work in a team of developers, designers and other stakeholders to achieve common project goals',
+    },
+    {
+        year: '2022 - 2023',
+        title: 'Salt&Pepper Agency',
+        duration: '1 Year',
+        details:
+            '• UI design\n' +
+            '• Implementation of new functionality\n' +
+            '• Adaptive and cross-browser layout using HTML, CSS and JavaScript\n' +
+            '• Developing web applications using React.js, project support from the beginning of development to putting them into production\n' +
+            '• Support of completed web projects\n' +
+            '• Interaction with backend developers',
+    },
+    {
+        year: '2021 - 2022',
+        title: 'Bk company',
+        duration: '1.6 Years',
+        details:
+            '• Website layout of various complexity, including adaptive, cross-browser and rubber layout, as well as other digital projects\n' +
+            '• Developing client-side applications using HTML, SCSS and JavaScript\n' +
+            '• Creating web applications based on React.js\n' +
+            '• Development of web interface components\n' +
+            '• Complete redesign and development of new functionality for all sections of the site\n' +
+            '• Identification and elimination of errors on websites\n' +
+            '• Interaction with backend developers',
+    },
+    {
+        year: '2019 - 2021',
+        title: 'Alidi',
+        duration: '2 Years',
+        details:
+            '• Producing web pages of varying complexity, including adaptive, multi-browser compatible and flexible formatting, as well as other digital technology projects\n' +
+            '• Creating client-side applications using HTML, CSS and JavaScript.\n' +
+            '• Creating web interface components\n' +
+            '• Complete redesign and development of new functionality for all sections of the site\n' +
+            '• Detecting and eliminating errors on websites\n' +
+            '• Optimization and extension of program code functionality',
+    },
 ];
 
 // nawbar data
 export const navbar: Navbar[] = [
-  {
-    href: '#main',
-    Icon: AiOutlineHome,
-  },
-  {
-    href: '#work',
-    Icon: AiOutlineAppstore,
-  },
-  {
-    href: '#projects',
-    Icon: AiOutlineProject,
-  },
-  {
-    href: '#contact',
-    Icon: AiOutlineMail,
-  },
-  {
-    href: '#main',
-    Icon: AiOutlineArrowUp,
-  },
+    {
+        href: '#main',
+        Icon: AiOutlineHome,
+    },
+    {
+        href: '#work',
+        Icon: AiOutlineAppstore,
+    },
+    {
+        href: '#projects',
+        Icon: AiOutlineProject,
+    },
+    {
+        href: '#contact',
+        Icon: AiOutlineMail,
+    },
+    {
+        href: '#main',
+        Icon: AiOutlineArrowUp,
+    },
 ];
 
 // navbarmin data
 export const navbarmin: Navbarmin[] = [
-  {
-    href: '#main',
-    Iconmin: AiOutlineHome,
-    name: 'Home',
-  },
-  {
-    href: '#work',
-    Iconmin: AiOutlineAppstore,
-    name: 'Work',
-  },
-  {
-    href: '#projects',
-    Iconmin: AiOutlineProject,
-    name: 'Projects',
-  },
-  {
-    href: '#contact',
-    Iconmin: AiOutlineMail,
-    name: 'Contact',
-  },
+    {
+        href: '#main',
+        Iconmin: AiOutlineHome,
+        name: 'Home',
+    },
+    {
+        href: '#work',
+        Iconmin: AiOutlineAppstore,
+        name: 'Work',
+    },
+    {
+        href: '#projects',
+        Iconmin: AiOutlineProject,
+        name: 'Projects',
+    },
+    {
+        href: '#contact',
+        Iconmin: AiOutlineMail,
+        name: 'Contact',
+    },
 ];
