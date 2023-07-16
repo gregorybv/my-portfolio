@@ -4,45 +4,46 @@
 
 /* ========================= */
 * {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @layer base {
-  html {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .h2 {
-    @apply text-6xl font-bold text-center text-[#001b5e] mb-2;
-  }
+    html {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
-  .mobile {
-    @apply w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-2 cursor-pointer hover:scale-105 ease-in duration-200;
-  }
+    .h2 {
+        @apply text-6xl font-bold text-center text-[#001b5e] mb-2;
+    }
+
+    .mobile {
+        @apply w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-2 cursor-pointer hover:scale-105 ease-in duration-200;
+    }
 }
 
 body {
-  background: #e3f6e0;
+    background: #e3f6e0;
 }
 
 body::-webkit-scrollbar {
-  width: 12px; 
+    width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: inherit; 
+    background: inherit;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #001b5e;
-  border-radius: 3rem;
-  height: 20px;
+    background-color: #001b5e;
+    border-radius: 3rem;
+    height: 20px;
 }
 
 input {
-  outline-color: rgb(194, 191, 191);
+    outline-color: rgb(194, 191, 191);
 }
 
 textarea {
-  outline-color: rgb(194, 191, 191);
+    outline-color: rgb(194, 191, 191);
 }
 
