@@ -1,5 +1,4 @@
-// WorkItem component
-import React from 'react';
+import {FC} from 'react';
 
 interface WorkItemProps {
   year: string;
@@ -8,7 +7,7 @@ interface WorkItemProps {
   details: string;
 }
 
-const WorkItem: React.FC<WorkItemProps> = ({
+const WorkItem: FC<WorkItemProps> = ({
   year,
   title,
   duration,

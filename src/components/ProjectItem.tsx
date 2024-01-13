@@ -26,7 +26,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{stack}</p>
         <a href={href} target="_blank">
-          <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-[#001b5e] hover:text-white">
+          <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-[#001b5e] hover:text-white ease-in duration-300">
             More Info
           </p>
         </a>

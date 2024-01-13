@@ -102,9 +102,21 @@ export const project: Project[] = [
 // work data
 export const work: Work[] = [
     {
-        year: '2023 - present day',
+        year: '2023 - Present time',
+        title: 'Umbrella IT',
+        duration: '1 Year',
+        details:
+            '• Developing functionality using React, TypeScript and Styled Components\n' +
+            '• Creating new functional blocks on company websites and integrating them with existing systems\n' +
+            '• Refinement and optimization of existing code to improve performance and user experience\n' +
+            '• Integration with external APIs and processing of received data\n' +
+            '• Participating in code reviews and ensuring high quality code, continuous code improvement\n' + '- Participating in code reviews and ensuring high quality code, continuous code improvement\n' +
+            '• Work in a team of developers, designers, analysts, testers and other stakeholders to achieve overall project goals',
+    },
+    {
+        year: '2022 - 2023',
         title: 'Professional partner',
-        duration: '0,5 Year',
+        duration: '1 Year',
         details:
             '• Developing an administration panel using React, TypeScript and Antd\n' +
             '• Creation of new functional blocks on the company\'s websites and their integration with existing systems\n' +
@@ -112,18 +124,6 @@ export const work: Work[] = [
             '• Integration with external APIs and processing of received data\n' +
             '• Participating in code reviews and ensuring high code quality\n' +
             '• Work in a team of developers, designers and other stakeholders to achieve common project goals',
-    },
-    {
-        year: '2022 - 2023',
-        title: 'Salt&Pepper Agency',
-        duration: '1 Year',
-        details:
-            '• UI design\n' +
-            '• Implementation of new functionality\n' +
-            '• Adaptive and cross-browser layout using HTML, CSS and JavaScript\n' +
-            '• Developing web applications using React.js, project support from the beginning of development to putting them into production\n' +
-            '• Support of completed web projects\n' +
-            '• Interaction with backend developers',
     },
     {
         year: '2021 - 2022',

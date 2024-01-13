@@ -1,13 +1,10 @@
-// HeroLink component
-
-import React from 'react';
+import {FC} from 'react';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const HeroLink: React.FC = () => {
+const HeroLink: FC = () => {
   return (
     <div
-      className="flex justify-between max-w-[200px] w-full"
-      // data-aos="fade-up"
+      className="flex justify-between max-w-[200px] w-full mt-2.5"
       data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1300"
