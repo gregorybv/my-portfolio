@@ -5,7 +5,7 @@ interface SidenavMobileProps {
   handleNav: () => void;
 }
 
-const SidenavMobile: FC<SidenavMobileProps> = ({ handleNav }) => {
+export const SidenavMobile: FC<SidenavMobileProps> = ({ handleNav }) => {
   return (
     <div className="fixed w-full h-screen bg-[#e3f6e0] flex flex-col justify-center items-center z-20">
       {navbarmin.map((item, id) => {
@@ -26,4 +26,3 @@ const SidenavMobile: FC<SidenavMobileProps> = ({ handleNav }) => {
   );
 };
 
-export default SidenavMobile;

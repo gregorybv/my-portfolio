@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import {FaTelegram, FaGithub, FaLinkedin} from 'react-icons/fa';
 
-const HeroLink: FC = () => {
+export const HeroLink: FC = () => {
     return (
         <div
             className="flex justify-between max-w-[200px] w-full mt-2.5"
@@ -25,4 +25,3 @@ const HeroLink: FC = () => {
     );
 };
 
-export default HeroLink;

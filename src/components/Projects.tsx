@@ -1,9 +1,9 @@
-import ProjectItem from './ProjectItem';
+import {ProjectItem} from './ProjectItem';
 import { project } from '../data';
 import { SmilingFace } from 'fluent-emoji';
 import {FC} from "react";
 
-const Projects: FC = () => {
+export const Projects: FC = () => {
   return (
     <div
       id="projects"
@@ -32,4 +32,3 @@ const Projects: FC = () => {
   );
 };
 
-export default Projects;

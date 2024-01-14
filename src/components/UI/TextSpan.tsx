@@ -6,7 +6,7 @@ interface TextSpanProps {
     className: string;
 }
 
-const TextSpan: FC<TextSpanProps> = ({children}) => {
+export const TextSpan: FC<TextSpanProps> = ({children}) => {
     const controls = useAnimationControls();
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -38,4 +38,3 @@ const TextSpan: FC<TextSpanProps> = ({children}) => {
     );
 };
 
-export default TextSpan;

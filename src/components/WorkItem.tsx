@@ -7,7 +7,7 @@ interface WorkItemProps {
   details: string;
 }
 
-const WorkItem: FC<WorkItemProps> = ({
+export const WorkItem: FC<WorkItemProps> = ({
   year,
   title,
   duration,
@@ -38,4 +38,3 @@ const WorkItem: FC<WorkItemProps> = ({
   );
 };
 
-export default WorkItem;

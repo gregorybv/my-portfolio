@@ -1,7 +1,7 @@
 import AnimatedCursor from 'react-animated-cursor';
 import {FC} from "react";
 
-const Cursor: FC = () => {
+export const Cursor: FC = () => {
   return (
     <div>
       <AnimatedCursor
@@ -29,4 +29,3 @@ const Cursor: FC = () => {
   );
 };
 
-export default Cursor;

@@ -1,7 +1,7 @@
 import {FC} from 'react';
-import TextSpan from './TextSpan';
+import {TextSpan} from './TextSpan';
 
-const HeroTitle: FC = () => {
+export const HeroTitle: FC = () => {
     const one = "I'm".split('');
     const two = 'Gregory'.split('');
     const three = 'web'.split('');
@@ -58,4 +58,3 @@ const HeroTitle: FC = () => {
     );
 };
 
-export default HeroTitle;

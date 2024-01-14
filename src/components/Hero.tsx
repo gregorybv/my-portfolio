@@ -1,10 +1,10 @@
 import photo from '../assets/image/photo.jpg';
-import HeroLink from './UI/HeroLink';
-import HeroAnimation from './UI/HeroAnimation';
-import HeroTitle from './UI/HeroTitle';
+import {HeroLink} from './UI/HeroLink';
+import {HeroAnimation} from './UI/HeroAnimation';
+import {HeroTitle} from './UI/HeroTitle';
 import {FC} from "react";
 
-const Hero: FC = () => {
+export const Hero: FC = () => {
     return (
         <div id="main">
             <img
@@ -24,4 +24,3 @@ const Hero: FC = () => {
     );
 };
 
-export default Hero;

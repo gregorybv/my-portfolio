@@ -1,9 +1,9 @@
 import {FC, useState} from 'react';
 import {AiOutlineMenu} from 'react-icons/all';
-import SidenavMobile from './UI/SidenavMobile';
-import SidenavItem from './UI/SidenavItem';
+import {SidenavMobile} from './UI/SidenavMobile';
+import {SidenavItem} from './UI/SidenavItem';
 
-const Sidenav: FC = () => {
+export const Sidenav: FC = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav);
@@ -22,4 +22,3 @@ const Sidenav: FC = () => {
     );
 };
 
-export default Sidenav;

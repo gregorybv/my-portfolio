@@ -1,7 +1,7 @@
 import { navbar } from '../../data';
 import {FC} from "react";
 
-const SidenavItem: FC = () => {
+export const SidenavItem: FC = () => {
   return (
     <div className="md:block hidden fixed top-[25%] z-10 ">
       <div className="flex flex-col">
@@ -27,4 +27,3 @@ const SidenavItem: FC = () => {
   );
 };
 
-export default SidenavItem;

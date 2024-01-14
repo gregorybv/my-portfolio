@@ -2,7 +2,7 @@ import {WinkingFace} from 'fluent-emoji';
 import {FC} from 'react';
 import {TypeAnimation} from 'react-type-animation';
 
-const HeroAnimation: FC = () => {
+export const HeroAnimation: FC = () => {
     return (
         <h2
             className="flex items-center sm:text-4xl text-2xl pt-4 text-gray-800"
@@ -30,4 +30,3 @@ const HeroAnimation: FC = () => {
     );
 };
 
-export default HeroAnimation;

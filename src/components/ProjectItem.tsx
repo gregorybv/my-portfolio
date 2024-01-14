@@ -7,7 +7,7 @@ interface ProjectItemProps {
     stack: string;
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({
+export const ProjectItem: FC<ProjectItemProps> = ({
                                                img,
                                                title,
                                                href,
@@ -38,4 +38,3 @@ const ProjectItem: FC<ProjectItemProps> = ({
     );
 };
 
-export default ProjectItem;
