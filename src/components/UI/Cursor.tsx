@@ -1,12 +1,9 @@
-// Cursor component
-
-// add animatedcursor
 import AnimatedCursor from 'react-animated-cursor';
+import {FC} from "react";
 
-const Cursor: React.FC = () => {
+const Cursor: FC = () => {
   return (
     <div>
-      {/* animated cursor title */}
       <AnimatedCursor
         innerSize={12}
         outerSize={10}

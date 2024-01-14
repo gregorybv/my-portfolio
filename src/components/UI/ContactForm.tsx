@@ -1,6 +1,7 @@
 import FormButton from './FormButton';
+import {FC} from "react";
 
-const ContactForm: React.FC = () => {
+const ContactForm: FC = () => {
   return (
     <form
       // The data is sent to getform.io and arrives in an email

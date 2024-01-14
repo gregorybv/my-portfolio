@@ -1,9 +1,9 @@
-// Projects component
 import ProjectItem from './ProjectItem';
 import { project } from '../data';
 import { SmilingFace } from 'fluent-emoji';
+import {FC} from "react";
 
-const Projects: React.FC = () => {
+const Projects: FC = () => {
   return (
     <div
       id="projects"
@@ -18,8 +18,7 @@ const Projects: React.FC = () => {
         {project.map((item, id) => {
           const { img, title, stack, href } = item;
           return (
-            // plugging in the component ProjectItem
-            <ProjectItem
+             <ProjectItem
               key={id}
               img={img}
               title={title}
