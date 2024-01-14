@@ -1,12 +1,12 @@
 import {motion, useAnimationControls} from 'framer-motion';
-import {useState, ReactNode, FC} from 'react';
+import {useState, ReactNode, FC, memo} from 'react';
 
 interface TextSpanProps {
     children: ReactNode;
     className: string;
 }
 
-export const TextSpan: FC<TextSpanProps> = ({children}) => {
+export const TextSpan: FC<TextSpanProps> = memo(({children}) => {
     const controls = useAnimationControls();
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -36,5 +36,4 @@ export const TextSpan: FC<TextSpanProps> = ({children}) => {
             {children}
         </motion.span>
     );
-};
-
+});

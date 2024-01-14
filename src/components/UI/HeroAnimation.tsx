@@ -1,8 +1,8 @@
 import {WinkingFace} from 'fluent-emoji';
-import {FC} from 'react';
+import {FC, memo} from 'react';
 import {TypeAnimation} from 'react-type-animation';
 
-export const HeroAnimation: FC = () => {
+export const HeroAnimation: FC = memo(() => {
     return (
         <h2
             className="flex items-center sm:text-4xl text-2xl pt-4 text-gray-800"
@@ -28,5 +28,4 @@ export const HeroAnimation: FC = () => {
             <WinkingFace className="w-[55px] pl-3"/>
         </h2>
     );
-};
-
+});

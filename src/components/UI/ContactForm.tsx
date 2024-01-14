@@ -1,7 +1,7 @@
 import {FormButton} from './FormButton';
-import {FC} from "react";
+import {FC, memo} from "react";
 
-export const ContactForm: FC = () => {
+export const ContactForm: FC =  memo(() => {
     return (
         <form
             // The data is sent to getform.io and arrives in an email
@@ -58,5 +58,5 @@ export const ContactForm: FC = () => {
             <FormButton/>
         </form>
     );
-};
+});
 

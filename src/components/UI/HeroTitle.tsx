@@ -1,7 +1,7 @@
-import {FC} from 'react';
+import {FC, memo} from 'react';
 import {TextSpan} from './TextSpan';
 
-export const HeroTitle: FC = () => {
+export const HeroTitle: FC = memo(() => {
     const one = "I'm".split('');
     const two = 'Gregory'.split('');
     const three = 'web'.split('');
@@ -56,5 +56,5 @@ export const HeroTitle: FC = () => {
             </div>
         </div>
     );
-};
+});
 
