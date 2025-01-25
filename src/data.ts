@@ -114,9 +114,9 @@ export const work: Work[] = [
             '• Work in a team of developers, designers, analysts, testers and other stakeholders to achieve overall project goals',
     },
     {
-        year: '2022 - 2023',
+        year: '2021 - 2023',
         title: 'Professional partner',
-        duration: '1 Year',
+        duration: '2 Year',
         details:
             '• Developing an administration panel using React, TypeScript and Antd\n' +
             '• Creation of new functional blocks on the company\'s websites and their integration with existing systems\n' +
@@ -124,19 +124,6 @@ export const work: Work[] = [
             '• Integration with external APIs and processing of received data\n' +
             '• Participating in code reviews and ensuring high code quality\n' +
             '• Work in a team of developers, designers and other stakeholders to achieve common project goals',
-    },
-    {
-        year: '2021 - 2022',
-        title: 'Bk company',
-        duration: '1.6 Years',
-        details:
-            '• Website layout of various complexity, including adaptive, cross-browser and rubber layout, as well as other digital projects\n' +
-            '• Developing client-side applications using HTML, SCSS and JavaScript\n' +
-            '• Creating web applications based on React.js\n' +
-            '• Development of web interface components\n' +
-            '• Complete redesign and development of new functionality for all sections of the site\n' +
-            '• Identification and elimination of errors on websites\n' +
-            '• Interaction with backend developers',
     },
     {
         year: '2019 - 2021',
@@ -152,7 +139,7 @@ export const work: Work[] = [
     },
 ];
 
-// nawbar data
+// navbar data
 export const navbar: Navbar[] = [
     {
         href: '#main',
