@@ -1,0 +1,1 @@
+export { HeroLink } from './hero-link.tsx';
