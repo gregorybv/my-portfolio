@@ -9,7 +9,7 @@ export const HeroTitle: FC = memo(() => {
 
   return (
     <div
-      className="sm:text-8xl text-5xl flex flex-col font-bold text-gray-800"
+      className="flex flex-col text-5xl font-bold text-gray-800 transition-colors sm:text-8xl dark:text-slate-100"
       data-aos="fade-down"
       data-aos-duration="1300"
     >

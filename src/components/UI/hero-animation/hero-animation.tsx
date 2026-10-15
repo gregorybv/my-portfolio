@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 export const HeroAnimation: FC = memo(() => {
   return (
     <h2
-      className="flex items-center sm:text-4xl text-2xl pt-4 text-gray-800"
+      className="flex items-center pt-4 text-2xl text-gray-800 transition-colors sm:text-4xl dark:text-slate-200"
       data-aos="fade-up"
       data-aos-duration="1300"
     >

@@ -11,7 +11,7 @@ export const SidenavItem: FC = memo(() => {
             <a
               key={id}
               href={href}
-              className="group rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-4 cursor-pointer"
+              className="nav-control group"
               data-aos="flip-left"
               data-aos-duration="1300"
             >

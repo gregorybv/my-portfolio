@@ -1,14 +1,19 @@
 // @ts-ignore
 import AnimatedCursor from 'react-animated-cursor';
 import { FC, memo } from 'react';
+import { Theme } from '../../../hooks/use-theme';
 
-export const Cursor: FC = memo(() => {
+interface CursorProps {
+  theme: Theme;
+}
+
+export const Cursor: FC<CursorProps> = memo(({theme}) => {
   return (
     <div>
       <AnimatedCursor
         innerSize={12}
         outerSize={10}
-        color="0, 0, 0"
+        color={theme === 'dark' ? '211, 248, 205' : '0, 27, 94'}
         outerAlpha={0.2}
         innerScale={0.8}
         outerScale={5}

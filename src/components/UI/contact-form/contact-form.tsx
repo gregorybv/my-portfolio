@@ -12,7 +12,7 @@ export const ContactForm: FC = memo(() => {
         <div className="flex flex-col">
           <label className="uppercase text-sm py-2">Name</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300"
+            className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
             type="text"
             name="name"
           />
@@ -21,7 +21,7 @@ export const ContactForm: FC = memo(() => {
         <div className="flex flex-col">
           <label className="uppercase text-sm py-2">Phone Number</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300 "
+            className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
             type="text"
             name="phone"
           />
@@ -31,7 +31,7 @@ export const ContactForm: FC = memo(() => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Email</label>
         <input
-          className="border-2 rounded-lg p-3 flex border-gray-300"
+          className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           type="email"
           name="name"
         />
@@ -40,7 +40,7 @@ export const ContactForm: FC = memo(() => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Subject</label>
         <input
-          className="border-2 rounded-lg p-3 flex border-gray-300 "
+          className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           type="text"
           name="subject"
         />
@@ -49,7 +49,7 @@ export const ContactForm: FC = memo(() => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Message</label>
         <textarea
-          className="border-2 rounded-lg p-3 border-gray-300"
+          className="rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           rows={5}
           name="message"
         ></textarea>

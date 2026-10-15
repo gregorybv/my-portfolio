@@ -12,17 +12,26 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
+    body {
+        @apply bg-[#e3f6e0] text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200;
+    }
+
     .h2 {
-        @apply text-6xl font-bold text-center text-[#001b5e] mb-2;
+        @apply mb-2 text-center text-6xl font-bold text-[#001b5e] transition-colors dark:text-[#d3f8cd];
     }
 
     .mobile {
-        @apply w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-[#4c85e6] m-2 p-2 cursor-pointer hover:scale-105 ease-in duration-200;
+        @apply m-2 flex w-[60%] cursor-pointer items-center justify-center rounded-full bg-gray-100 p-2 text-[#001b5e] shadow-lg shadow-[#4c85e6] transition duration-200 ease-in hover:scale-105 dark:bg-slate-800 dark:text-slate-100 dark:shadow-black/30;
     }
-}
 
-body {
-    background: #e3f6e0;
+    .nav-control {
+        @apply m-2 flex cursor-pointer items-center justify-center rounded-full bg-gray-100 p-4 text-[#001b5e] shadow-lg shadow-[#4c85e6] transition-colors duration-300 dark:bg-slate-800 dark:text-slate-100 dark:shadow-black/30;
+    }
+
+    input,
+    textarea {
+        @apply bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -39,11 +48,22 @@ body::-webkit-scrollbar-thumb {
     height: 20px;
 }
 
-input {
-    outline-color: rgb(194, 191, 191);
+.dark body::-webkit-scrollbar-thumb {
+    background-color: #d3f8cd;
 }
 
+input,
 textarea {
     outline-color: rgb(194, 191, 191);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

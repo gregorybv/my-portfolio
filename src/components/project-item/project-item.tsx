@@ -15,7 +15,7 @@ export const ProjectItem: FC<ProjectItemProps> = memo(({
                                                        }) => {
   return (
     <div
-      className="relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#4c85e6] rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e] hover:scale-110 ease-in duration-300">
+      className="group relative flex h-auto w-full items-center justify-center rounded-xl shadow-lg shadow-[#4c85e6] transition duration-300 ease-in hover:scale-110 hover:bg-gradient-to-r hover:from-gray-200 hover:to-[#001b5e] dark:shadow-black/40 dark:hover:from-slate-700 dark:hover:to-slate-950">
       <img
         src={img}
         alt="projectitemImage"
