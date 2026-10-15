@@ -16,84 +16,96 @@ import {
     AiOutlineArrowUp,
 } from 'react-icons/all';
 
+type ProjectTranslationKey =
+    | 'sports'
+    | 'tour'
+    | 'weekaway'
+    | 'music'
+    | 'data'
+    | 'drive'
+    | 'travel'
+    | 'trading'
+    | 'kraftex';
+
+type NavigationTranslationKey = 'home' | 'work' | 'projects' | 'contact';
+
 interface Project {
     img: string;
-    title: string;
+    titleKey: ProjectTranslationKey;
     stack: string;
     href: string;
 }
 
 interface Work {
-    year: string;
+    id: 'umbrella' | 'professionalPartner';
     title: string;
-    duration: string;
-    details: string;
 }
 
 interface Navbar {
     href: string;
     Icon: any;
+    labelKey: NavigationTranslationKey | 'backToTop';
 }
 
 interface Navbarmin {
     href: string;
     Iconmin: any;
-    name: string;
+    labelKey: NavigationTranslationKey;
 }
 
 // project data
 export const project: Project[] = [
     {
         img: img1,
-        title: 'Sports site',
+        titleKey: 'sports',
         stack: 'react css',
         href: 'https://gregorybv.github.io/gym-website-react/',
     },
     {
         img: img2,
-        title: 'Your tour',
+        titleKey: 'tour',
         stack: 'react hooks css aos',
         href: 'https://gregorybv.github.io/tour-app-react/',
     },
     {
         img: img3,
-        title: 'Weekaway site',
+        titleKey: 'weekaway',
         stack: 'react tailwindcss',
         href: 'https://gregorybv.github.io/weekaway-website/',
     },
     {
         img: img4,
-        title: 'Music app',
+        titleKey: 'music',
         stack: 'react rrd tailwindcss',
         href: 'https://gregorybv.github.io/music-app/',
     },
     {
         img: img5,
-        title: 'Grow with data',
+        titleKey: 'data',
         stack: 'react tailwindcss',
         href: 'https://gregorybv.github.io/grow-with-data/',
     },
     {
         img: img6,
-        title: 'Drive site',
+        titleKey: 'drive',
         stack: 'react css hooks',
         href: 'https://gregorybv.github.io/drive-website/',
     },
     {
         img: img7,
-        title: 'Your travel',
+        titleKey: 'travel',
         stack: 'react tailwind hooks',
         href: 'https://gregorybv.github.io/travel-app/',
     },
     {
         img: img8,
-        title: 'Trading Protocol',
+        titleKey: 'trading',
         stack: 'react tailwind hooks',
         href: 'https://gregorybv.github.io/trading-protocol/',
     },
     {
         img: img9,
-        title: 'Kraftex site',
+        titleKey: 'kraftex',
         stack: 'react css hooks',
         href: 'https://gregorybv.github.io/kraftex-app/',
     },
@@ -102,37 +114,12 @@ export const project: Project[] = [
 // work data
 export const work: Work[] = [
     {
-        year: 'Oct 2023 - Present',
+        id: 'umbrella',
         title: 'Umbrella IT',
-        duration: '3 Years 1 Month',
-        details:
-            'Senior Frontend Developer\n' +
-            '• Developing and enhancing commercial web applications with React, TypeScript, and Next.js\n' +
-            '• Designed and implemented an interactive task management module, improving usability and product engagement\n' +
-            '• Optimized critical interface areas, significantly reducing page load times and improving user experience\n' +
-            '• Integrated external services and APIs, including OAuth authentication and real-time data retrieval\n' +
-            '• Contributed to frontend architecture and internal engineering standards\n' +
-            '• Established code review practices and unified static analysis rules, improving code quality and maintainability\n' +
-            '• Introduced Storybook for UI component development and documentation\n' +
-            '• Mentored junior developers and participated in onboarding, technical planning, and task decomposition\n' +
-            'Stack: React, TypeScript, Next.js, Redux Toolkit, TanStack Query, Effector, MobX, Axios, Storybook, SCSS, Tailwind CSS, Ant Design, Material UI, Vite, Webpack, GitLab, CI/CD',
     },
     {
-        year: 'Sep 2019 - Oct 2023',
+        id: 'professionalPartner',
         title: 'Professional Partner',
-        duration: '4 Years 2 Months',
-        details:
-            'Lead Frontend Developer\n' +
-            '• Developed a corporate CRM platform, SPA, and administration panel with React and TypeScript\n' +
-            '• Designed and implemented a bank guarantee calculator with configurable calculations, application forms, and data processing workflows\n' +
-            '• Improved large dataset rendering through virtualization and React rendering optimizations\n' +
-            '• Introduced Storybook and React Testing Library, improving UI component quality and stability\n' +
-            '• Integrated external services, maps, and data visualization systems\n' +
-            '• Migrated part of the project from JavaScript to TypeScript, improving reliability and maintainability\n' +
-            '• Optimized administration interfaces and tables with complex filtering and large datasets\n' +
-            '• Collaborated with analysts, designers, and backend developers on user flows and financial modules\n' +
-            '• Participated in sprint planning, task estimation, and technical design discussions\n' +
-            'Stack: React, TypeScript, Redux, TanStack Query, Axios, Next.js, Vite, Styled Components, CSS Modules, Tailwind CSS, Ant Design, GitLab, Agile (Scrum)',
     },
 ];
 
@@ -141,22 +128,27 @@ export const navbar: Navbar[] = [
     {
         href: '#main',
         Icon: AiOutlineHome,
+        labelKey: 'home',
     },
     {
         href: '#work',
         Icon: AiOutlineAppstore,
+        labelKey: 'work',
     },
     {
         href: '#projects',
         Icon: AiOutlineProject,
+        labelKey: 'projects',
     },
     {
         href: '#contact',
         Icon: AiOutlineMail,
+        labelKey: 'contact',
     },
     {
         href: '#main',
         Icon: AiOutlineArrowUp,
+        labelKey: 'backToTop',
     },
 ];
 
@@ -165,21 +157,21 @@ export const navbarmin: Navbarmin[] = [
     {
         href: '#main',
         Iconmin: AiOutlineHome,
-        name: 'Home',
+        labelKey: 'home',
     },
     {
         href: '#work',
         Iconmin: AiOutlineAppstore,
-        name: 'Work',
+        labelKey: 'work',
     },
     {
         href: '#projects',
         Iconmin: AiOutlineProject,
-        name: 'Projects',
+        labelKey: 'projects',
     },
     {
         href: '#contact',
         Iconmin: AiOutlineMail,
-        name: 'Contact',
+        labelKey: 'contact',
     },
 ];

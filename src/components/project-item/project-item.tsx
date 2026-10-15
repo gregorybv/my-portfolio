@@ -1,4 +1,5 @@
 import { FC, memo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ProjectItemProps {
   img: string;
@@ -13,12 +14,14 @@ export const ProjectItem: FC<ProjectItemProps> = memo(({
                                                          href,
                                                          stack,
                                                        }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       className="group relative flex h-auto w-full items-center justify-center rounded-xl shadow-lg shadow-[#4c85e6] transition duration-300 ease-in hover:scale-110 hover:bg-gradient-to-r hover:from-gray-200 hover:to-[#001b5e] dark:shadow-black/40 dark:hover:from-slate-700 dark:hover:to-slate-950">
       <img
         src={img}
-        alt="projectitemImage"
+        alt={t('projects.imageAlt', {title})}
         className="h-full rounded-xl group-hover:opacity-10"
         loading="lazy"
       />
@@ -31,7 +34,7 @@ export const ProjectItem: FC<ProjectItemProps> = memo(({
         <a href={href} target="_blank">
           <p
             className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-[#001b5e] hover:text-white ease-in duration-300">
-            More Info
+            {t('projects.moreInfo')}
           </p>
         </a>
       </div>

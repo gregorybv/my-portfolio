@@ -1,6 +1,7 @@
 import { FC, memo } from 'react';
 import { BsMoonStars, BsSun } from 'react-icons/bs';
 import { Theme } from '../../../hooks/use-theme';
+import { useTranslation } from 'react-i18next';
 
 interface ThemeToggleProps {
   theme: Theme;
@@ -11,8 +12,9 @@ export const ThemeToggle: FC<ThemeToggleProps> = memo(({
   theme,
   onToggle,
 }) => {
+  const { t } = useTranslation();
   const isDark = theme === 'dark';
-  const label = isDark ? 'Switch to light theme' : 'Switch to dark theme';
+  const label = isDark ? t('theme.switchToLight') : t('theme.switchToDark');
   const Icon = isDark ? BsSun : BsMoonStars;
 
   return (

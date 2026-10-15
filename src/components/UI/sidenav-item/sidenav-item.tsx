@@ -1,16 +1,20 @@
 import { navbar } from '../../../data.ts';
 import { FC, memo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const SidenavItem: FC = memo(() => {
+  const { t } = useTranslation();
+
   return (
     <div className="md:block hidden fixed top-[25%] z-10 ">
       <div className="flex flex-col">
         {navbar.map((item, id) => {
-          const {href, Icon} = item;
+          const {href, Icon, labelKey} = item;
           return (
             <a
               key={id}
               href={href}
+              aria-label={t(`navigation.${labelKey}`)}
               className="nav-control group"
               data-aos="flip-left"
               data-aos-duration="1300"

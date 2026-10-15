@@ -1,11 +1,12 @@
 import { FC, memo } from 'react';
 import { TextSpan } from '../text-span';
+import { useTranslation } from 'react-i18next';
 
 export const HeroTitle: FC = memo(() => {
-  const one = 'I\'m'.split('');
-  const two = 'Gregory'.split('');
-  const three = 'web'.split('');
-  const four = 'developer'.split('');
+  const { t } = useTranslation();
+  const one = t('hero.title.intro').split('');
+  const two = t('hero.title.name').split('');
+  const three = t('hero.title.profession').split('');
 
   return (
     <div
@@ -33,26 +34,14 @@ export const HeroTitle: FC = memo(() => {
         })}
       </div>
 
-      <div className="flex gap-5">
-        <div className="flex">
-          {three.map((letter, index) => {
-            return (
-              <TextSpan className="p-5" key={index}>
-                {letter}
-              </TextSpan>
-            );
-          })}
-        </div>
-
-        <div className="flex">
-          {four.map((letter, index) => {
-            return (
-              <TextSpan className="p-5" key={index}>
-                {letter}
-              </TextSpan>
-            );
-          })}
-        </div>
+      <div className="flex">
+        {three.map((letter, index) => {
+          return (
+            <TextSpan className="p-5" key={index}>
+              {letter}
+            </TextSpan>
+          );
+        })}
       </div>
     </div>
   );

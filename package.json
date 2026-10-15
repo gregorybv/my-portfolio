@@ -14,9 +14,11 @@
     "aos": "^2.3.4",
     "fluent-emoji": "^0.1.2",
     "framer-motion": "^10.12.10",
+    "i18next": "^26.4.5",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^17.0.17",
     "react-icons": "^4.8.0",
     "react-type-animation": "^3.0.1",
     "tailwindcss": "^3.3.2"
