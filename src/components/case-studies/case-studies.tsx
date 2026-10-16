@@ -40,26 +40,16 @@ export const CaseStudies: FC = () => {
           {work.map(({id, title}, index) => (
             <article
               key={id}
-              className="group relative overflow-hidden rounded-[1.4rem] border border-[#001b5e]/10 bg-white/80 p-6 transition duration-300 hover:-translate-y-1 hover:border-[#001b5e]/25 hover:shadow-xl hover:shadow-[#4c85e6]/10 sm:p-8 dark:border-white/10 dark:bg-slate-950/75 dark:hover:border-[#d3f8cd]/30 dark:hover:shadow-black/30"
+              className="relative overflow-hidden rounded-[1.4rem] border border-[#001b5e]/10 bg-white/80 p-6 transition duration-300 hover:-translate-y-1 hover:border-[#001b5e]/25 hover:shadow-xl hover:shadow-[#4c85e6]/10 sm:p-8 dark:border-white/10 dark:bg-slate-950/75 dark:hover:border-[#d3f8cd]/30 dark:hover:shadow-black/30"
               data-aos="fade-up"
               data-aos-delay={index * 80}
             >
-              <span
-                aria-hidden="true"
-                className="absolute -right-3 -top-8 select-none text-[9rem] font-black leading-none text-[#001b5e]/[0.035] transition-transform duration-500 group-hover:-translate-x-2 dark:text-[#d3f8cd]/[0.035]"
-              >
-                0{index + 1}
-              </span>
-
               <header className="relative border-b border-[#001b5e]/10 pb-6 dark:border-white/10">
                 <div className="flex items-center gap-3">
                   <span className="h-px w-8 bg-[#4c85e6] dark:bg-[#d3f8cd]" />
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-stone-500 dark:text-slate-400">
                     {title}
                   </p>
-                  <span className="ml-auto font-mono text-xs font-bold tracking-[0.2em] text-stone-400 dark:text-slate-500">
-                    / 0{index + 1}
-                  </span>
                 </div>
                 <h3 className="mt-4 max-w-lg text-2xl font-bold leading-tight text-[#001b5e] sm:text-3xl dark:text-[#d3f8cd]">
                   {t(`caseStudies.items.${id}.title`)}

@@ -146,21 +146,41 @@ export const resources = {
             title: 'Frontend architecture',
             description:
               'Explicit module boundaries, predictable state flow, API integrations, and incremental migrations that preserve delivery.',
+            highlights: {
+              first: 'Define module responsibilities and integration boundaries.',
+              second: 'Select state management patterns for product constraints.',
+              third: 'Plan incremental migrations without blocking feature delivery.',
+            },
           },
           quality: {
             title: 'Quality systems',
             description:
               'Code review practices, static analysis, component documentation, testing strategy, and shared engineering standards.',
+            highlights: {
+              first: 'Establish review criteria and shared static analysis rules.',
+              second: 'Build reusable UI workflows with Storybook and testing.',
+              third: 'Balance delivery speed with maintainability and reliability.',
+            },
           },
           performance: {
             title: 'Performance and complex UI',
             description:
               'Rendering optimization, virtualization, large datasets, critical loading paths, and responsive administration interfaces.',
+            highlights: {
+              first: 'Identify rendering and data-processing bottlenecks.',
+              second: 'Apply virtualization and optimize data-heavy interfaces.',
+              third: 'Improve critical loading paths and perceived responsiveness.',
+            },
           },
           leadership: {
             title: 'Technical leadership',
             description:
               'Mentoring, onboarding, task decomposition, estimation, technical planning, and cross-functional collaboration.',
+            highlights: {
+              first: 'Decompose initiatives and surface technical risks early.',
+              second: 'Mentor developers and improve onboarding practices.',
+              third: 'Align product, design, and backend around feasible solutions.',
+            },
           },
         },
       },
@@ -347,21 +367,41 @@ export const resources = {
             title: 'Frontend-архитектура',
             description:
               'Явные границы модулей, предсказуемый поток состояния, API-интеграции и поэтапные миграции без остановки поставки.',
+            highlights: {
+              first: 'Определяю зоны ответственности модулей и границы интеграций.',
+              second: 'Выбираю управление состоянием с учётом ограничений продукта.',
+              third: 'Планирую поэтапные миграции без остановки поставки функциональности.',
+            },
           },
           quality: {
             title: 'Системное качество',
             description:
               'Code review, статический анализ, документация компонентов, стратегия тестирования и общие инженерные стандарты.',
+            highlights: {
+              first: 'Формирую критерии code review и единые правила статического анализа.',
+              second: 'Выстраиваю работу с переиспользуемым UI через Storybook и тестирование.',
+              third: 'Балансирую скорость поставки, поддерживаемость и надёжность.',
+            },
           },
           performance: {
             title: 'Производительность и сложный UI',
             description:
               'Оптимизация рендеринга, виртуализация, большие данные, критические пути загрузки и адаптивные административные интерфейсы.',
+            highlights: {
+              first: 'Выявляю узкие места рендеринга и обработки данных.',
+              second: 'Применяю виртуализацию и оптимизирую интерфейсы с большими данными.',
+              third: 'Улучшаю критические пути загрузки и воспринимаемую отзывчивость.',
+            },
           },
           leadership: {
             title: 'Техническое лидерство',
             description:
               'Менторинг, онбординг, декомпозиция, оценка, техническое планирование и кросс-функциональное взаимодействие.',
+            highlights: {
+              first: 'Декомпозирую инициативы и заранее выявляю технические риски.',
+              second: 'Развиваю разработчиков и улучшаю практики онбординга.',
+              third: 'Синхронизирую product, design и backend вокруг реализуемых решений.',
+            },
           },
         },
       },
