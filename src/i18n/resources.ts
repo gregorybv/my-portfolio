@@ -2,7 +2,7 @@ export const resources = {
   en: {
     translation: {
       meta: {
-        title: 'Gregory Berezin — Frontend Developer',
+        title: 'Grigoriy Berezin — Frontend Developer',
         description:
           'Frontend Developer focused on React, TypeScript, frontend architecture, performance, and engineering leadership.',
       },
@@ -29,14 +29,14 @@ export const resources = {
         backToTop: 'Back to top',
       },
       hero: {
-        imageAlt: 'Gregory Berezin',
+        imageAlt: 'Grigoriy Berezin',
         summary:
           'I design maintainable frontend systems, improve product performance, and help teams deliver predictable results.',
         caseStudiesCta: 'View case studies',
         contactCta: 'Contact me',
         title: {
           intro: "I'm",
-          name: 'Gregory,',
+          name: 'Grigoriy,',
           profession: 'Frontend Developer',
         },
         roles: {
@@ -48,9 +48,9 @@ export const resources = {
       },
       social: {
         heading: 'Professional profiles',
-        telegram: 'Contact Gregory on Telegram',
-        github: 'View Gregory’s GitHub profile',
-        linkedin: 'View Gregory’s LinkedIn profile',
+        telegram: 'Contact Grigoriy on Telegram',
+        github: 'View Grigoriy’s GitHub profile',
+        linkedin: 'View Grigoriy’s LinkedIn profile',
       },
       about: {
         heading: 'About',

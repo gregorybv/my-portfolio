@@ -1,4 +1,4 @@
-# Gregory Berezin — Portfolio
+# Grigoriy Berezin — Portfolio
 
 Personal portfolio for a Frontend Developer. The site presents
 professional experience, technical expertise, selected work, and contact

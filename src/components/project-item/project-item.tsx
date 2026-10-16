@@ -39,7 +39,7 @@ export const ProjectItem: FC<ProjectItemProps> = memo(({
           <p className="pb-5 pt-2 text-sm uppercase tracking-wide text-stone-600 dark:text-slate-300">
             {stack}
           </p>
-          <span className="mt-auto font-bold text-[#001b5e] underline decoration-2 underline-offset-4 dark:text-[#d3f8cd]">
+          <span className="mt-auto font-bold text-[#001b5e] underline decoration-2 underline-offset-4 transition-[filter] duration-300 group-hover:drop-shadow-[0_0_8px_rgba(76,133,230,0.95)] group-focus-within:drop-shadow-[0_0_8px_rgba(76,133,230,0.95)] dark:text-[#d3f8cd] dark:group-hover:drop-shadow-[0_0_8px_rgba(211,248,205,0.9)] dark:group-focus-within:drop-shadow-[0_0_8px_rgba(211,248,205,0.9)]">
             {t('projects.moreInfo')}
           </span>
         </div>
