@@ -20,14 +20,14 @@ export const ContactForm: FC = memo(() => {
           autoComplete="off"
         />
       </div>
-      <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+      <div className="grid w-full gap-5 sm:grid-cols-2">
         <div className="flex flex-col">
-          <label className="uppercase text-sm py-2" htmlFor="contact-name">
+          <label className="pb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#001b5e]/70 dark:text-[#d3f8cd]/70" htmlFor="contact-name">
             {t('contact.name')}
           </label>
           <input
             id="contact-name"
-            className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
+            className="min-h-[52px] rounded-xl border border-[#001b5e]/15 px-4 focus:border-[#4c85e6] dark:border-white/15 dark:focus:border-[#d3f8cd]"
             type="text"
             name="name"
             autoComplete="name"
@@ -36,12 +36,12 @@ export const ContactForm: FC = memo(() => {
         </div>
 
         <div className="flex flex-col">
-          <label className="uppercase text-sm py-2" htmlFor="contact-phone">
+          <label className="pb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#001b5e]/70 dark:text-[#d3f8cd]/70" htmlFor="contact-phone">
             {t('contact.phone')}
           </label>
           <input
             id="contact-phone"
-            className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
+            className="min-h-[52px] rounded-xl border border-[#001b5e]/15 px-4 focus:border-[#4c85e6] dark:border-white/15 dark:focus:border-[#d3f8cd]"
             type="tel"
             name="phone"
             autoComplete="tel"
@@ -50,42 +50,44 @@ export const ContactForm: FC = memo(() => {
         </div>
       </div>
 
-      <div className="flex flex-col py-2">
-        <label className="uppercase text-sm py-2" htmlFor="contact-email">
-          {t('contact.email')}
-        </label>
-        <input
-          id="contact-email"
-          className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
-          type="email"
-          name="email"
-          autoComplete="email"
-          required
-        />
+      <div className="mt-5 grid w-full gap-5 sm:grid-cols-2">
+        <div className="flex flex-col">
+          <label className="pb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#001b5e]/70 dark:text-[#d3f8cd]/70" htmlFor="contact-email">
+            {t('contact.email')}
+          </label>
+          <input
+            id="contact-email"
+            className="min-h-[52px] rounded-xl border border-[#001b5e]/15 px-4 focus:border-[#4c85e6] dark:border-white/15 dark:focus:border-[#d3f8cd]"
+            type="email"
+            name="email"
+            autoComplete="email"
+            required
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <label className="pb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#001b5e]/70 dark:text-[#d3f8cd]/70" htmlFor="contact-subject">
+            {t('contact.subject')}
+          </label>
+          <input
+            id="contact-subject"
+            className="min-h-[52px] rounded-xl border border-[#001b5e]/15 px-4 focus:border-[#4c85e6] dark:border-white/15 dark:focus:border-[#d3f8cd]"
+            type="text"
+            name="subject"
+            autoComplete="off"
+            required
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col py-2">
-        <label className="uppercase text-sm py-2" htmlFor="contact-subject">
-          {t('contact.subject')}
-        </label>
-        <input
-          id="contact-subject"
-          className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
-          type="text"
-          name="subject"
-          autoComplete="off"
-          required
-        />
-      </div>
-
-      <div className="flex flex-col py-2">
-        <label className="uppercase text-sm py-2" htmlFor="contact-message">
+      <div className="mt-5 flex flex-col">
+        <label className="pb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#001b5e]/70 dark:text-[#d3f8cd]/70" htmlFor="contact-message">
           {t('contact.message')}
         </label>
         <textarea
           id="contact-message"
-          className="rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
-          rows={5}
+          className="min-h-[132px] resize-y rounded-xl border border-[#001b5e]/15 p-4 focus:border-[#4c85e6] dark:border-white/15 dark:focus:border-[#d3f8cd]"
+          rows={4}
           name="message"
           required
         ></textarea>
