@@ -2,9 +2,9 @@ export const resources = {
   en: {
     translation: {
       meta: {
-        title: 'Gregory Berezin — Senior / Lead Frontend Developer',
+        title: 'Gregory Berezin — Frontend Developer',
         description:
-          'Senior / Lead Frontend Developer focused on React, TypeScript, frontend architecture, performance, and engineering leadership.',
+          'Frontend Developer focused on React, TypeScript, frontend architecture, performance, and engineering leadership.',
       },
       language: {
         switchTo: 'Switch to Russian',
@@ -37,7 +37,7 @@ export const resources = {
         title: {
           intro: "I'm",
           name: 'Gregory,',
-          profession: 'Senior / Lead Frontend Developer',
+          profession: 'Frontend Developer',
         },
         roles: {
           developer: 'Frontend architecture',
@@ -55,7 +55,7 @@ export const resources = {
       about: {
         heading: 'About',
         summary:
-          'Senior / Lead Frontend Developer with commercial experience building React and TypeScript applications, CRM platforms, administration systems, and financial workflows.',
+          'Frontend Developer with commercial experience building React and TypeScript applications, CRM platforms, administration systems, and financial workflows.',
         details:
           'My focus is explicit architecture, reliable delivery, accessible interfaces, and engineering practices that help teams scale: code review, shared quality standards, technical planning, and mentoring.',
         caseStudiesCta: 'Explore case studies',
@@ -185,7 +185,7 @@ export const resources = {
       contact: {
         heading: 'Contact me',
         description:
-          'Have a Senior or Lead frontend role, a product challenge, or an architecture discussion? Send me a message.',
+          'Have a frontend role, a product challenge, or an architecture discussion? Send me a message.',
         name: 'Name',
         phone: 'Phone Number',
         email: 'Email',
@@ -196,16 +196,16 @@ export const resources = {
           'The form is processed by Getform. Submit only the contact details needed for a reply.',
       },
       footer: {
-        role: 'Senior / Lead Frontend Developer',
+        role: 'Frontend Developer',
       },
     },
   },
   ru: {
     translation: {
       meta: {
-        title: 'Григорий Березин — Senior / Lead Frontend Developer',
+        title: 'Григорий Березин — Frontend Developer',
         description:
-          'Senior / Lead Frontend Developer: React, TypeScript, frontend-архитектура, производительность и техническое лидерство.',
+          'Frontend Developer: React, TypeScript, frontend-архитектура, производительность и техническое лидерство.',
       },
       language: {
         switchTo: 'Переключить на английский',
@@ -238,7 +238,7 @@ export const resources = {
         title: {
           intro: 'Я',
           name: 'Григорий,',
-          profession: 'Senior / Lead Frontend Developer',
+          profession: 'Frontend Developer',
         },
         roles: {
           developer: 'Frontend-архитектура',
@@ -256,7 +256,7 @@ export const resources = {
       about: {
         heading: 'Обо мне',
         summary:
-          'Senior / Lead Frontend Developer с коммерческим опытом разработки React- и TypeScript-приложений, CRM-платформ, административных систем и финансовых сценариев.',
+          'Frontend Developer с коммерческим опытом разработки React- и TypeScript-приложений, CRM-платформ, административных систем и финансовых сценариев.',
         details:
           'Фокусируюсь на явной архитектуре, надёжной поставке, доступных интерфейсах и инженерных практиках, которые помогают командам масштабироваться: code review, единые стандарты качества, техническое планирование и менторинг.',
         caseStudiesCta: 'Посмотреть кейсы',
@@ -386,7 +386,7 @@ export const resources = {
       contact: {
         heading: 'Связаться со мной',
         description:
-          'Есть позиция Senior/Lead frontend, продуктовая задача или тема для обсуждения архитектуры? Напишите мне.',
+          'Есть frontend-позиция, продуктовая задача или тема для обсуждения архитектуры? Напишите мне.',
         name: 'Имя',
         phone: 'Номер телефона',
         email: 'Email',
@@ -397,7 +397,7 @@ export const resources = {
           'Форма обрабатывается сервисом Getform. Указывайте только данные, необходимые для ответа.',
       },
       footer: {
-        role: 'Senior / Lead Frontend Developer',
+        role: 'Frontend Developer',
       },
     },
   },
