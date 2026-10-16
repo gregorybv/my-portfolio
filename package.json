@@ -2,40 +2,45 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite --open",
     "build": "npm run typecheck && vite build",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint src --report-unused-disable-directives --max-warnings 0",
     "check": "npm run lint && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "fluent-emoji": "^0.1.2",
-    "framer-motion": "^10.12.10",
-    "i18next": "^26.4.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^17.0.17",
-    "react-icons": "^4.8.0",
-    "react-type-animation": "^3.0.1"
+    "framer-motion": "^14.3.0",
+    "i18next": "^26.4.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^17.0.20",
+    "react-icons": "^5.7.0",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
-    "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.4.19",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.2"
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/aos": "^3.0.8",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.4.0",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^8.3.4"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   }
 }
