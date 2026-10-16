@@ -30,20 +30,26 @@ export const resources = {
       },
       hero: {
         imageAlt: 'Grigoriy Berezin',
+        eyebrow: 'React · TypeScript · Next.js',
         summary:
-          'I design maintainable frontend systems, improve product performance, and help teams deliver predictable results.',
-        caseStudiesCta: 'View case studies',
-        contactCta: 'Contact me',
+          'I build maintainable frontend systems, improve product performance, and turn complex requirements into reliable user experiences.',
+        caseStudiesCta: 'Explore case studies',
+        contactCta: 'Discuss a project',
         title: {
-          intro: "I'm",
-          name: 'Grigoriy,',
+          intro: "Hi, I'm",
+          name: 'Grigoriy Berezin',
           profession: 'Frontend Developer',
         },
+        highlights: {
+          experience: '7+ years in commercial development',
+          architecture: 'Architecture and complex interfaces',
+          quality: 'Performance, quality, and mentoring',
+        },
         roles: {
-          developer: 'Frontend architecture',
-          coder: 'Product delivery',
-          enthusiast: 'Performance and quality',
-          person: 'Engineering leadership',
+          developer: 'Developer',
+          coder: 'Coder',
+          enthusiast: 'Technical enthusiast',
+          person: 'And just a good man',
         },
       },
       social: {
@@ -251,20 +257,26 @@ export const resources = {
       },
       hero: {
         imageAlt: 'Григорий Березин',
+        eyebrow: 'React · TypeScript · Next.js',
         summary:
-          'Проектирую поддерживаемые frontend-системы, улучшаю производительность продуктов и помогаю командам предсказуемо достигать результата.',
-        caseStudiesCta: 'Посмотреть кейсы',
-        contactCta: 'Связаться',
+          'Создаю поддерживаемые frontend-системы, улучшаю производительность продуктов и превращаю сложные требования в надёжные пользовательские сценарии.',
+        caseStudiesCta: 'Изучить кейсы',
+        contactCta: 'Обсудить проект',
         title: {
-          intro: 'Я',
-          name: 'Григорий,',
+          intro: 'Привет, я',
+          name: 'Григорий Березин',
           profession: 'Frontend Developer',
         },
+        highlights: {
+          experience: '7+ лет коммерческой разработки',
+          architecture: 'Архитектура и сложные интерфейсы',
+          quality: 'Производительность, качество и менторинг',
+        },
         roles: {
-          developer: 'Frontend-архитектура',
-          coder: 'Развитие продукта',
-          enthusiast: 'Производительность и качество',
-          person: 'Техническое лидерство',
+          developer: 'Разработчик',
+          coder: 'Программист',
+          enthusiast: 'Технический энтузиаст',
+          person: 'И просто хороший человек',
         },
       },
       social: {

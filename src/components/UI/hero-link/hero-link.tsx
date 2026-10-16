@@ -28,11 +28,8 @@ export const HeroLink: FC = memo(() => {
 
   return (
     <nav
-      className="mt-4 flex w-full max-w-[200px] justify-between"
+      className="mt-5 flex items-center gap-3"
       aria-label={t('social.heading')}
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1300"
     >
       {links.map(({id, href, label, Icon}) => (
         <a
@@ -42,9 +39,9 @@ export const HeroLink: FC = memo(() => {
           rel="noopener noreferrer"
           aria-label={label}
           title={label}
-          className="rounded-md p-1 transition-transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/15 bg-white/60 text-[#001b5e] backdrop-blur-sm transition-colors hover:bg-white dark:border-white/15 dark:bg-slate-900/55 dark:text-[#d3f8cd] dark:hover:bg-slate-900"
         >
-          <Icon size={30} aria-hidden="true"/>
+          <Icon size={22} aria-hidden="true"/>
         </a>
       ))}
     </nav>

@@ -9,13 +9,13 @@ export const HeroAnimation: FC = memo(() => {
   const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
 
   return (
-    <p
-      className="flex items-center pt-4 text-2xl text-gray-800 transition-colors sm:text-4xl dark:text-slate-200"
-      data-aos="fade-up"
-      data-aos-duration="1300"
+    <span
+      className="flex items-center whitespace-nowrap text-xl font-semibold text-gray-800 transition-colors sm:text-2xl lg:w-[560px] lg:justify-end lg:text-4xl dark:text-slate-200"
     >
       {prefersReducedMotion ? (
-        <span className="pl-1">{t('hero.roles.developer')}</span>
+        <span className="inline-block w-[220px] text-left sm:w-[360px] lg:w-[480px]">
+          {t('hero.roles.developer')}
+        </span>
       ) : (
         <TypeAnimation
           key={i18n.resolvedLanguage}
@@ -32,10 +32,13 @@ export const HeroAnimation: FC = memo(() => {
           wrapper="span"
           cursor={false}
           repeat={Infinity}
-          style={{fontSize: '1em', paddingLeft: '5px'}}
+          speed={{type: 'keyStrokeDelayInMs', value: 110}}
+          deletionSpeed={{type: 'keyStrokeDelayInMs', value: 65}}
+          className="inline-block w-[220px] text-left sm:w-[360px] lg:w-[480px]"
+          style={{fontSize: '1em'}}
         />
       )}
-      <WinkingFace className="w-[55px] pl-3" aria-hidden="true"/>
-    </p>
+      <WinkingFace className="w-14 shrink-0 pl-3 lg:w-16" aria-hidden="true"/>
+    </span>
   );
 });
