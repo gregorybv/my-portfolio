@@ -27,8 +27,20 @@ const getInitialLanguage = (): Language => {
 
 const updateDocumentLanguage = (language: string) => {
   const resolvedLanguage: Language = language.startsWith('ru') ? 'ru' : 'en';
+  const meta = resources[resolvedLanguage].translation.meta;
   document.documentElement.lang = resolvedLanguage;
-  document.title = resources[resolvedLanguage].translation.meta.title;
+  document.title = meta.title;
+
+  const updateMetaContent = (selector: string, content: string) => {
+    document.querySelector<HTMLMetaElement>(selector)?.setAttribute('content', content);
+  };
+
+  updateMetaContent('meta[name="description"]', meta.description);
+  updateMetaContent('meta[property="og:title"]', meta.title);
+  updateMetaContent('meta[property="og:description"]', meta.description);
+  updateMetaContent('meta[name="twitter:title"]', meta.title);
+  updateMetaContent('meta[name="twitter:description"]', meta.description);
+  updateMetaContent('meta[property="og:locale"]', resolvedLanguage === 'ru' ? 'ru_RU' : 'en_US');
 };
 
 void i18n

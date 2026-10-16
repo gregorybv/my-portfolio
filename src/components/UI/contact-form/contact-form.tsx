@@ -9,8 +9,17 @@ export const ContactForm: FC = memo(() => {
     <form
       action="https://getform.io/f/da699e76-08d8-4b86-8287-fb489777d6b9"
       method="POST"
-      encType="multipart/form-data"
     >
+      <div hidden>
+        <label htmlFor="contact-company">Company website</label>
+        <input
+          id="contact-company"
+          type="text"
+          name="_gotcha"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div className="grid md:grid-cols-2 gap-4 w-full py-2">
         <div className="flex flex-col">
           <label className="uppercase text-sm py-2" htmlFor="contact-name">
@@ -21,6 +30,8 @@ export const ContactForm: FC = memo(() => {
             className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
             type="text"
             name="name"
+            autoComplete="name"
+            required
           />
         </div>
 
@@ -31,8 +42,10 @@ export const ContactForm: FC = memo(() => {
           <input
             id="contact-phone"
             className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
-            type="text"
+            type="tel"
             name="phone"
+            autoComplete="tel"
+            inputMode="tel"
           />
         </div>
       </div>
@@ -45,7 +58,9 @@ export const ContactForm: FC = memo(() => {
           id="contact-email"
           className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           type="email"
-          name="name"
+          name="email"
+          autoComplete="email"
+          required
         />
       </div>
 
@@ -58,6 +73,8 @@ export const ContactForm: FC = memo(() => {
           className="flex rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           type="text"
           name="subject"
+          autoComplete="off"
+          required
         />
       </div>
 
@@ -70,6 +87,7 @@ export const ContactForm: FC = memo(() => {
           className="rounded-lg border-2 border-gray-300 p-3 focus:border-[#4c85e6] dark:border-slate-700 dark:focus:border-[#d3f8cd]"
           rows={5}
           name="message"
+          required
         ></textarea>
       </div>
       <FormButton/>

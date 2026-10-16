@@ -1,14 +1,16 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useState, ReactNode, FC, memo, useCallback } from 'react';
+import { useMediaQuery } from '../../../hooks/use-media-query';
 
 interface TextSpanProps {
   children: ReactNode;
   className: string;
 }
 
-export const TextSpan: FC<TextSpanProps> = memo(({children}) => {
+export const TextSpan: FC<TextSpanProps> = memo(({children, className}) => {
   const controls = useAnimationControls();
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
 
   const rubberBand = useCallback(() => {
     controls.start({
@@ -24,9 +26,13 @@ export const TextSpan: FC<TextSpanProps> = memo(({children}) => {
     setIsPlaying(true);
   }, [controls]);
 
+  if (prefersReducedMotion) {
+    return <span className={className}>{children}</span>;
+  }
+
   return (
     <motion.span
-      className="hover:text-[#08fdd8]"
+      className={`${className} hover:text-[#08fdd8]`}
       animate={controls}
       onMouseOver={() => {
         if (!isPlaying) rubberBand();

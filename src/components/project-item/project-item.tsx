@@ -17,28 +17,34 @@ export const ProjectItem: FC<ProjectItemProps> = memo(({
   const { t } = useTranslation();
 
   return (
-    <div
-      className="group relative flex h-auto w-full items-center justify-center rounded-xl shadow-lg shadow-[#4c85e6] transition duration-300 ease-in hover:scale-110 hover:bg-gradient-to-r hover:from-gray-200 hover:to-[#001b5e] dark:shadow-black/40 dark:hover:from-slate-700 dark:hover:to-slate-950">
-      <img
-        src={img}
-        alt={t('projects.imageAlt', {title})}
-        className="h-full rounded-xl group-hover:opacity-10"
-        loading="lazy"
-      />
-      <div
-        className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl font-bold text-white tracking-wide text-center">
-          {title}
-        </h3>
-        <p className="pb-4 pt-2 text-white text-center">{stack}</p>
-        <a href={href} target="_blank">
-          <p
-            className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-[#001b5e] hover:text-white ease-in duration-300">
-            {t('projects.moreInfo')}
+    <article className="group overflow-hidden rounded-xl bg-white shadow-lg shadow-[#4c85e6]/40 transition-transform duration-300 hover:-translate-y-1 dark:bg-slate-900 dark:shadow-black/40">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full flex-col focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#001b5e] dark:focus-visible:outline-[#d3f8cd]"
+        aria-label={`${title}: ${t('projects.moreInfo')}`}
+      >
+        <img
+          src={img}
+          alt={t('projects.imageAlt', {title})}
+          className="aspect-[4/3] w-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="flex flex-1 flex-col p-5">
+          <h3 className="text-2xl font-bold tracking-wide text-[#001b5e] dark:text-[#d3f8cd]">
+            {title}
+          </h3>
+          <p className="pb-5 pt-2 text-sm uppercase tracking-wide text-stone-600 dark:text-slate-300">
+            {stack}
           </p>
-        </a>
-      </div>
-    </div>
+          <span className="mt-auto font-bold text-[#001b5e] underline decoration-2 underline-offset-4 dark:text-[#d3f8cd]">
+            {t('projects.moreInfo')}
+          </span>
+        </div>
+      </a>
+    </article>
   );
 });
 

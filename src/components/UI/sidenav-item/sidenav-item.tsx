@@ -1,4 +1,4 @@
-import { navbar } from '../../../data.ts';
+import { navbar } from '../../../data';
 import { FC, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -8,8 +8,8 @@ export const SidenavItem: FC = memo(() => {
   return (
     <div className="md:block hidden fixed top-[25%] z-10 ">
       <div className="flex flex-col">
-        {navbar.map((item, id) => {
-          const {href, Icon, labelKey} = item;
+        {navbar.map((item) => {
+          const {id, href, Icon, labelKey} = item;
           return (
             <a
               key={id}

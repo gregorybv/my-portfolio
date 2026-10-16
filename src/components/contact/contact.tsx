@@ -6,10 +6,14 @@ export const Contact: FC = memo(() => {
   const { t } = useTranslation();
 
   return (
-    <div id="contact" className="max-w-[900px] m-auto md:pl-20 px-4 py-16">
-      <h2 className="h2">{t('contact.heading')}</h2>
+    <section id="contact" aria-labelledby="contact-heading" className="section-container max-w-[900px]">
+      <h2 id="contact-heading" className="h2">{t('contact.heading')}</h2>
+      <p className="section-intro">{t('contact.description')}</p>
       <ContactForm/>
-    </div>
+      <p className="mt-4 text-sm text-stone-600 dark:text-slate-400">
+        {t('contact.privacy')}
+      </p>
+    </section>
   );
 });
 

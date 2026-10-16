@@ -6,44 +6,43 @@ export const HeroTitle: FC = memo(() => {
   const { t } = useTranslation();
   const one = t('hero.title.intro').split('');
   const two = t('hero.title.name').split('');
-  const three = t('hero.title.profession').split('');
+  const profession = t('hero.title.profession');
 
   return (
-    <div
-      className="flex flex-col text-5xl font-bold text-gray-800 transition-colors sm:text-8xl dark:text-slate-100"
+    <h1
+      id="hero-title"
+      aria-label={`${t('hero.title.intro')} ${t('hero.title.name')} ${profession}`}
+      className="flex max-w-full flex-col text-4xl font-bold leading-tight text-gray-800 transition-colors sm:text-5xl lg:text-7xl dark:text-slate-100"
       data-aos="fade-down"
       data-aos-duration="1300"
     >
-      <div className="flex">
+      <span className="flex" aria-hidden="true">
         {one.map((letter, index) => {
           return (
-            <TextSpan className="p-5" key={index}>
-              {letter}
+            <TextSpan className="inline-block" key={index}>
+              {letter === ' ' ? '\u00A0' : letter}
             </TextSpan>
           );
         })}
-      </div>
+      </span>
 
-      <div className="flex">
+      <span className="flex" aria-hidden="true">
         {two.map((letter, index) => {
           return (
-            <TextSpan className="flex" key={index}>
-              {letter}
+            <TextSpan className="inline-block" key={index}>
+              {letter === ' ' ? '\u00A0' : letter}
             </TextSpan>
           );
         })}
-      </div>
+      </span>
 
-      <div className="flex">
-        {three.map((letter, index) => {
-          return (
-            <TextSpan className="p-5" key={index}>
-              {letter}
-            </TextSpan>
-          );
-        })}
-      </div>
-    </div>
+      <span
+        className="mt-2 max-w-[18ch] text-3xl leading-tight sm:text-5xl lg:text-6xl"
+        aria-hidden="true"
+      >
+        {profession}
+      </span>
+    </h1>
   );
 });
 

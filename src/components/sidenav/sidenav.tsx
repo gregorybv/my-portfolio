@@ -1,5 +1,5 @@
-import { FC, memo, useCallback, useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/all';
+import { FC, memo, useEffect, useRef, useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { SidenavMobile } from '../UI/sidenav-mobile';
 import { SidenavItem } from '../UI/sidenav-item';
 import { ThemeToggle } from '../UI/theme-toggle';
@@ -14,22 +14,49 @@ interface SidenavProps {
 
 export const Sidenav: FC<SidenavProps> = memo(({theme, onThemeToggle}) => {
   const [nav, setNav] = useState<boolean>(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const { t } = useTranslation();
 
-  const handleNav = useCallback(() => {
-    setNav(!nav);
+  const handleNav = () => setNav((isOpen) => !isOpen);
+
+  useEffect(() => {
+    if (!nav) {
+      return;
+    }
+
+    const menuButton = menuButtonRef.current;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setNav(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = previousOverflow;
+      menuButton?.focus();
+    };
   }, [nav]);
 
   return (
     <div>
       <button
+        ref={menuButtonRef}
         type="button"
         onClick={handleNav}
-        className="fixed right-36 top-7 z-[99] rounded-full bg-gray-100 p-2 text-[#001b5e] shadow-lg shadow-[#4c85e6]/50 transition-colors md:hidden dark:bg-slate-800 dark:text-slate-100 dark:shadow-black/30"
+        className="fixed left-4 top-5 z-[99] rounded-full bg-gray-100 p-2 text-[#001b5e] shadow-lg shadow-[#4c85e6]/50 transition-colors md:hidden dark:bg-slate-800 dark:text-slate-100 dark:shadow-black/30"
         aria-label={nav ? t('navigation.close') : t('navigation.open')}
         aria-expanded={nav}
+        aria-controls="mobile-navigation"
       >
-        <AiOutlineMenu size={30} aria-hidden="true"/>
+        {nav
+          ? <AiOutlineClose size={30} aria-hidden="true"/>
+          : <AiOutlineMenu size={30} aria-hidden="true"/>}
       </button>
       <div className="fixed right-3 top-5 z-[99] flex">
         <LanguageToggle/>

@@ -2,7 +2,9 @@ export const resources = {
   en: {
     translation: {
       meta: {
-        title: 'Gregory Berezin — Frontend Developer',
+        title: 'Gregory Berezin — Senior / Lead Frontend Developer',
+        description:
+          'Senior / Lead Frontend Developer focused on React, TypeScript, frontend architecture, performance, and engineering leadership.',
       },
       language: {
         switchTo: 'Switch to Russian',
@@ -15,32 +17,56 @@ export const resources = {
       navigation: {
         open: 'Open navigation menu',
         close: 'Close navigation menu',
+        menu: 'Main navigation',
+        skipToContent: 'Skip to content',
         home: 'Home',
+        about: 'About',
         work: 'Work',
+        caseStudies: 'Case studies',
+        expertise: 'Expertise',
         projects: 'Projects',
         contact: 'Contact',
         backToTop: 'Back to top',
       },
       hero: {
         imageAlt: 'Gregory Berezin',
+        summary:
+          'I design maintainable frontend systems, improve product performance, and help teams deliver predictable results.',
+        caseStudiesCta: 'View case studies',
+        contactCta: 'Contact me',
         title: {
           intro: "I'm",
           name: 'Gregory,',
-          profession: 'web — developer',
+          profession: 'Senior / Lead Frontend Developer',
         },
         roles: {
-          developer: 'Developer',
-          coder: 'Coder',
-          enthusiast: 'Technical enthusiast',
-          person: 'And just a good man',
+          developer: 'Frontend architecture',
+          coder: 'Product delivery',
+          enthusiast: 'Performance and quality',
+          person: 'Engineering leadership',
         },
+      },
+      social: {
+        heading: 'Professional profiles',
+        telegram: 'Contact Gregory on Telegram',
+        github: 'View Gregory’s GitHub profile',
+        linkedin: 'View Gregory’s LinkedIn profile',
+      },
+      about: {
+        heading: 'About',
+        summary:
+          'Senior / Lead Frontend Developer with commercial experience building React and TypeScript applications, CRM platforms, administration systems, and financial workflows.',
+        details:
+          'My focus is explicit architecture, reliable delivery, accessible interfaces, and engineering practices that help teams scale: code review, shared quality standards, technical planning, and mentoring.',
+        caseStudiesCta: 'Explore case studies',
+        contactCta: 'Discuss a role',
       },
       work: {
         heading: 'Work',
         items: {
           umbrella: {
             year: 'Oct 2023 - Present',
-            duration: '3 Years 1 Month',
+            duration: 'Current role',
             details:
               'Senior Frontend Developer\n' +
               '• Developing and enhancing commercial web applications with React, TypeScript, and Next.js\n' +
@@ -71,10 +97,78 @@ export const resources = {
           },
         },
       },
+      caseStudies: {
+        heading: 'Case studies',
+        description:
+          'Selected examples of product and engineering work. Confidential details are intentionally generalized.',
+        fields: {
+          problem: 'Problem',
+          role: 'Role',
+          decisions: 'Key decisions',
+          outcome: 'Outcome',
+          stack: 'Technology',
+        },
+        items: {
+          umbrella: {
+            title: 'Task management and frontend standards',
+            problem:
+              'A commercial product needed a more usable task workflow, faster critical interfaces, and consistent frontend engineering practices.',
+            role:
+              'Senior Frontend Developer contributing to architecture, implementation, planning, code review, onboarding, and mentoring.',
+            decisions:
+              'Built an interactive task module, integrated OAuth and real-time data, unified static analysis rules, and introduced Storybook.',
+            outcome:
+              'Improved critical interface performance, strengthened code quality practices, and made UI development and maintenance more consistent.',
+            stack:
+              'React, TypeScript, Next.js, Redux Toolkit, TanStack Query, Storybook, Vite, Webpack, CI/CD.',
+          },
+          professionalPartner: {
+            title: 'CRM and financial application workflows',
+            problem:
+              'A corporate platform required complex financial forms, configurable calculations, large data tables, and maintainable administration tooling.',
+            role:
+              'Lead Frontend Developer working with analysts, designers, and backend engineers on delivery and technical design.',
+            decisions:
+              'Implemented a bank guarantee calculator, introduced virtualization and testing practices, and migrated part of the product from JavaScript to TypeScript.',
+            outcome:
+              'Made large-data interfaces more responsive, increased change stability, and simplified further development of the codebase.',
+            stack:
+              'React, TypeScript, Redux, TanStack Query, Next.js, React Testing Library, Storybook, Vite, CI/CD.',
+          },
+        },
+      },
+      expertise: {
+        heading: 'Expertise',
+        description:
+          'Areas where I contribute beyond individual feature implementation.',
+        items: {
+          architecture: {
+            title: 'Frontend architecture',
+            description:
+              'Explicit module boundaries, predictable state flow, API integrations, and incremental migrations that preserve delivery.',
+          },
+          quality: {
+            title: 'Quality systems',
+            description:
+              'Code review practices, static analysis, component documentation, testing strategy, and shared engineering standards.',
+          },
+          performance: {
+            title: 'Performance and complex UI',
+            description:
+              'Rendering optimization, virtualization, large datasets, critical loading paths, and responsive administration interfaces.',
+          },
+          leadership: {
+            title: 'Technical leadership',
+            description:
+              'Mentoring, onboarding, task decomposition, estimation, technical planning, and cross-functional collaboration.',
+          },
+        },
+      },
       projects: {
         heading: 'Projects',
         description: 'Examples of my recent projects implemented using various technologies',
         moreInfo: 'More Info',
+        otherProjects: 'Show other projects',
         imageAlt: '{{title}} project preview',
         items: {
           sports: 'Sports site',
@@ -90,19 +184,28 @@ export const resources = {
       },
       contact: {
         heading: 'Contact me',
+        description:
+          'Have a Senior or Lead frontend role, a product challenge, or an architecture discussion? Send me a message.',
         name: 'Name',
         phone: 'Phone Number',
         email: 'Email',
         subject: 'Subject',
         message: 'Message',
         submit: 'Send Message',
+        privacy:
+          'The form is processed by Getform. Submit only the contact details needed for a reply.',
+      },
+      footer: {
+        role: 'Senior / Lead Frontend Developer',
       },
     },
   },
   ru: {
     translation: {
       meta: {
-        title: 'Григорий Березин — Frontend-разработчик',
+        title: 'Григорий Березин — Senior / Lead Frontend Developer',
+        description:
+          'Senior / Lead Frontend Developer: React, TypeScript, frontend-архитектура, производительность и техническое лидерство.',
       },
       language: {
         switchTo: 'Переключить на английский',
@@ -115,32 +218,56 @@ export const resources = {
       navigation: {
         open: 'Открыть меню навигации',
         close: 'Закрыть меню навигации',
+        menu: 'Основная навигация',
+        skipToContent: 'Перейти к содержанию',
         home: 'Главная',
+        about: 'Обо мне',
         work: 'Опыт',
+        caseStudies: 'Кейсы',
+        expertise: 'Экспертиза',
         projects: 'Проекты',
         contact: 'Контакты',
         backToTop: 'Наверх',
       },
       hero: {
         imageAlt: 'Григорий Березин',
+        summary:
+          'Проектирую поддерживаемые frontend-системы, улучшаю производительность продуктов и помогаю командам предсказуемо достигать результата.',
+        caseStudiesCta: 'Посмотреть кейсы',
+        contactCta: 'Связаться',
         title: {
           intro: 'Я',
           name: 'Григорий,',
-          profession: 'веб-разработчик',
+          profession: 'Senior / Lead Frontend Developer',
         },
         roles: {
-          developer: 'Разработчик',
-          coder: 'Программист',
-          enthusiast: 'Технический энтузиаст',
-          person: 'И просто хороший человек',
+          developer: 'Frontend-архитектура',
+          coder: 'Развитие продукта',
+          enthusiast: 'Производительность и качество',
+          person: 'Техническое лидерство',
         },
+      },
+      social: {
+        heading: 'Профессиональные профили',
+        telegram: 'Связаться с Григорием в Telegram',
+        github: 'Открыть профиль Григория на GitHub',
+        linkedin: 'Открыть профиль Григория в LinkedIn',
+      },
+      about: {
+        heading: 'Обо мне',
+        summary:
+          'Senior / Lead Frontend Developer с коммерческим опытом разработки React- и TypeScript-приложений, CRM-платформ, административных систем и финансовых сценариев.',
+        details:
+          'Фокусируюсь на явной архитектуре, надёжной поставке, доступных интерфейсах и инженерных практиках, которые помогают командам масштабироваться: code review, единые стандарты качества, техническое планирование и менторинг.',
+        caseStudiesCta: 'Посмотреть кейсы',
+        contactCta: 'Обсудить позицию',
       },
       work: {
         heading: 'Опыт работы',
         items: {
           umbrella: {
             year: 'Октябрь 2023 — настоящее время',
-            duration: '3 года 1 месяц',
+            duration: 'Текущая позиция',
             details:
               'Senior Frontend Developer\n' +
               '• Разрабатываю и развиваю коммерческие веб-приложения на React, TypeScript и Next.js\n' +
@@ -171,10 +298,78 @@ export const resources = {
           },
         },
       },
+      caseStudies: {
+        heading: 'Кейсы',
+        description:
+          'Примеры продуктовой и инженерной работы. Конфиденциальные детали намеренно обобщены.',
+        fields: {
+          problem: 'Задача',
+          role: 'Роль',
+          decisions: 'Ключевые решения',
+          outcome: 'Результат',
+          stack: 'Технологии',
+        },
+        items: {
+          umbrella: {
+            title: 'Управление задачами и frontend-стандарты',
+            problem:
+              'Коммерческому продукту требовались более удобный рабочий процесс задач, ускорение критичных интерфейсов и единые инженерные практики.',
+            role:
+              'Senior Frontend Developer: архитектура, реализация, планирование, code review, онбординг и менторинг.',
+            decisions:
+              'Разработал интерактивный модуль задач, интегрировал OAuth и real-time данные, унифицировал правила статического анализа и внедрил Storybook.',
+            outcome:
+              'Улучшил производительность критичных интерфейсов, укрепил практики контроля качества и сделал разработку UI более последовательной.',
+            stack:
+              'React, TypeScript, Next.js, Redux Toolkit, TanStack Query, Storybook, Vite, Webpack, CI/CD.',
+          },
+          professionalPartner: {
+            title: 'CRM и финансовые пользовательские сценарии',
+            problem:
+              'Корпоративной платформе требовались сложные финансовые формы, настраиваемые расчёты, большие таблицы и поддерживаемая административная система.',
+            role:
+              'Lead Frontend Developer: совместная работа с аналитиками, дизайнерами и backend-разработчиками над поставкой и техническими решениями.',
+            decisions:
+              'Реализовал калькулятор банковских гарантий, внедрил виртуализацию и практики тестирования, частично мигрировал продукт с JavaScript на TypeScript.',
+            outcome:
+              'Повысил отзывчивость интерфейсов с большими данными, стабильность изменений и удобство дальнейшего развития кодовой базы.',
+            stack:
+              'React, TypeScript, Redux, TanStack Query, Next.js, React Testing Library, Storybook, Vite, CI/CD.',
+          },
+        },
+      },
+      expertise: {
+        heading: 'Экспертиза',
+        description:
+          'Области, в которых я участвую помимо реализации отдельных функций.',
+        items: {
+          architecture: {
+            title: 'Frontend-архитектура',
+            description:
+              'Явные границы модулей, предсказуемый поток состояния, API-интеграции и поэтапные миграции без остановки поставки.',
+          },
+          quality: {
+            title: 'Системное качество',
+            description:
+              'Code review, статический анализ, документация компонентов, стратегия тестирования и общие инженерные стандарты.',
+          },
+          performance: {
+            title: 'Производительность и сложный UI',
+            description:
+              'Оптимизация рендеринга, виртуализация, большие данные, критические пути загрузки и адаптивные административные интерфейсы.',
+          },
+          leadership: {
+            title: 'Техническое лидерство',
+            description:
+              'Менторинг, онбординг, декомпозиция, оценка, техническое планирование и кросс-функциональное взаимодействие.',
+          },
+        },
+      },
       projects: {
         heading: 'Проекты',
         description: 'Примеры моих недавних проектов, реализованных с использованием различных технологий',
         moreInfo: 'Подробнее',
+        otherProjects: 'Показать остальные проекты',
         imageAlt: 'Превью проекта «{{title}}»',
         items: {
           sports: 'Спортивный сайт',
@@ -190,12 +385,19 @@ export const resources = {
       },
       contact: {
         heading: 'Связаться со мной',
+        description:
+          'Есть позиция Senior/Lead frontend, продуктовая задача или тема для обсуждения архитектуры? Напишите мне.',
         name: 'Имя',
         phone: 'Номер телефона',
         email: 'Email',
         subject: 'Тема',
         message: 'Сообщение',
         submit: 'Отправить сообщение',
+        privacy:
+          'Форма обрабатывается сервисом Getform. Указывайте только данные, необходимые для ответа.',
+      },
+      footer: {
+        role: 'Senior / Lead Frontend Developer',
       },
     },
   },

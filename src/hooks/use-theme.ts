@@ -26,6 +26,9 @@ export const useTheme = () => {
     const root = document.documentElement;
     root.classList.toggle('dark', theme === 'dark');
     root.style.colorScheme = theme;
+    document
+      .querySelector<HTMLMetaElement>('meta[name="theme-color"]')
+      ?.setAttribute('content', theme === 'dark' ? '#020617' : '#e3f6e0');
   }, [theme]);
 
   useEffect(() => {
