@@ -140,7 +140,7 @@ export const resources = {
       expertise: {
         heading: 'Expertise',
         description:
-          'Areas where I contribute beyond individual feature implementation.',
+          'I turn product requirements into scalable frontend systems — from architecture and delivery standards to team growth.',
         items: {
           architecture: {
             title: 'Frontend architecture',
@@ -341,7 +341,7 @@ export const resources = {
       expertise: {
         heading: 'Экспертиза',
         description:
-          'Области, в которых я участвую помимо реализации отдельных функций.',
+          'Превращаю продуктовые требования в масштабируемые frontend-системы — от архитектуры и стандартов поставки до развития команды.',
         items: {
           architecture: {
             title: 'Frontend-архитектура',
