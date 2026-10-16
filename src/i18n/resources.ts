@@ -60,10 +60,39 @@ export const resources = {
       },
       about: {
         heading: 'About',
+        eyebrow: 'Frontend · 7+ years',
+        title: 'I turn complex product requirements into reliable frontend systems',
         summary:
-          'Frontend Developer with commercial experience building React and TypeScript applications, CRM platforms, administration systems, and financial workflows.',
-        details:
-          'My focus is explicit architecture, reliable delivery, accessible interfaces, and engineering practices that help teams scale: code review, shared quality standards, technical planning, and mentoring.',
+          'I own the full development cycle: architecture, decomposition, implementation, and production support. I stay close to the code while aligning product, design, and backend around feasible technical decisions.',
+        responsibilities: {
+          architecture: 'Architecture',
+          delivery: 'Predictable delivery',
+          team: 'Team growth',
+        },
+        metrics: {
+          experience: {
+            label: 'Experience',
+            description: 'years in commercial development',
+          },
+          applications: {
+            label: 'Current scope',
+            description: 'client applications in parallel',
+          },
+          data: {
+            label: 'Data scale',
+            description: 'records in high-load interfaces',
+          },
+          components: {
+            label: 'UI platform',
+            description: 'reusable components',
+          },
+        },
+        impact: {
+          title: 'Performance as a measurable product result',
+          description:
+            'Reduced critical page load time from 4.5 to 2 seconds and removed delays in data-heavy user flows.',
+          team: 'Teams up to 24',
+        },
         caseStudiesCta: 'Explore case studies',
         contactCta: 'Discuss a role',
       },
@@ -287,10 +316,39 @@ export const resources = {
       },
       about: {
         heading: 'Обо мне',
+        eyebrow: 'Frontend · 7+ лет',
+        title: 'Превращаю сложные продуктовые требования в надёжные frontend-системы',
         summary:
-          'Frontend Developer с коммерческим опытом разработки React- и TypeScript-приложений, CRM-платформ, административных систем и финансовых сценариев.',
-        details:
-          'Фокусируюсь на явной архитектуре, надёжной поставке, доступных интерфейсах и инженерных практиках, которые помогают командам масштабироваться: code review, единые стандарты качества, техническое планирование и менторинг.',
+          'Отвечаю за полный цикл разработки: архитектуру, декомпозицию, реализацию и сопровождение. Остаюсь близко к коду и синхронизирую product, design и backend вокруг реализуемых технических решений.',
+        responsibilities: {
+          architecture: 'Архитектура',
+          delivery: 'Предсказуемая поставка',
+          team: 'Развитие команды',
+        },
+        metrics: {
+          experience: {
+            label: 'Опыт',
+            description: 'лет коммерческой разработки',
+          },
+          applications: {
+            label: 'Текущий контур',
+            description: 'клиентских приложения параллельно',
+          },
+          data: {
+            label: 'Масштаб данных',
+            description: 'записей в нагруженных интерфейсах',
+          },
+          components: {
+            label: 'UI-платформа',
+            description: 'переиспользуемых компонентов',
+          },
+        },
+        impact: {
+          title: 'Производительность как измеримый результат',
+          description:
+            'Сократил загрузку критичных страниц с 4,5 до 2 секунд и устранил задержки в сценариях с большими данными.',
+          team: 'Команды до 24',
+        },
         caseStudiesCta: 'Посмотреть кейсы',
         contactCta: 'Обсудить позицию',
       },
